@@ -1,0 +1,41 @@
+@import "reset";
+
+header nav h1 {
+    visibility: hidden;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: #352121;
+}
+
+nav div.navbar {
+    height: 72vh;
+    width: 60vw;
+    box-shadow: 0 0 50rem 10rem #C4C2C2;
+    margin: 12vh auto;
+    border-radius: 40rem;
+    overflow: hidden;
+}
+
+#nav-items {
+    height: inherit;
+    width: inherit;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #C2C2C2;
+    & .nav-item {
+        display: block;
+        height: 24vh;
+        min-width: 20vw;
+        background: #343858;
+        line-height: 24vh;
+        font-size: 30rem;
+        color: #fff;
+        // border: 1px solid #000;
+        text-align: center;
+    }
+}

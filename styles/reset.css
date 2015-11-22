@@ -1,0 +1,58 @@
+/* line 4, reset.scss */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre,
+form, fieldset, input, textarea, p, blockquote, th, td, button {
+  padding: 0;
+  margin: 0;
+  font-size: 10px; }
+
+/* line 10, reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 14, reset.scss */
+fieldset, img {
+  border: 0; }
+
+/* line 17, reset.scss */
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 21, reset.scss */
+ol, ul, li {
+  list-style: none; }
+
+/* line 24, reset.scss */
+caption, th {
+  text-align: center; }
+
+/* line 28, reset.scss */
+h1 {
+  font-size: 20px;
+  font-weight: bold; }
+
+/* line 28, reset.scss */
+h2 {
+  font-size: 18px;
+  font-weight: bold; }
+
+/* line 28, reset.scss */
+h3 {
+  font-size: 16px;
+  font-weight: bold; }
+
+/* line 30, reset.scss */
+h4, h5, h6 {
+  font-weight: bold;
+  font-size: 10px; }
+
+/* line 34, reset.scss */
+:before, :after {
+  content: ''; }
+
+/* line 37, reset.scss */
+abbr, acronym {
+  border: 0; }
+
+/*# sourceMappingURL=reset.css.map */

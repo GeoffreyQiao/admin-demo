@@ -1,0 +1,7 @@
+{
+    "host": "localhost",
+    "user": "root",
+    "pswd": "123",
+    "dbname": "Geo",
+    "char": "UTF8"
+}
