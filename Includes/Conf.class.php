@@ -21,7 +21,7 @@ class Conf
         
         //一次性读取配置文件的配置信息赋值给data属性；
         //此处应用绝对路径        
-        $this->data = json_decode( file_get_contents(ROOT . 'config/db.json'), true );
+        $this->data = new  SimpleXMLElement ( ROOT.'config/conf.xml' ,  NULL ,  TRUE );
     }
     
     final protected function __clone() 
@@ -46,7 +46,7 @@ class Conf
     {
         if( array_key_exists( $key, $this->data ) )
         {
-            return $this->data[ $key ];
+            return $this->data[$key];
         } 
         else
         {

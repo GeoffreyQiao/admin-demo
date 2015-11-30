@@ -22,7 +22,7 @@ abstract class Db
       $p：密码
       return：bool 表示连接数据库成功状态
     */
-    public abstract function connect( $h, $u, $p );
+    public abstract function connect( $h, $u, $p, $d, $c );
     
     /*
       发送查询语句

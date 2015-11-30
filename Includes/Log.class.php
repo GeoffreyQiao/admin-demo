@@ -2,8 +2,8 @@
 //内容给定，写入文件(fopen,fwrite).如果文件大于1M，重新写一份。
 //
 class Log{
-    //常量代表日志文件的名称
-    const LOGFILE = "curr.log";
+
+    const LOGFILE = 'curr.log';
 
     //把内容写入到日志文件
     public static function write($cont){
@@ -15,7 +15,7 @@ class Log{
       $fh = fopen($log,'ab');
       fwrite($fh,$cont);
       fclose($fh);
-      clearstatcache(true,ROOT. 'data/log/'.LOGFILE);
+      clearstatcache(true,ROOT. 'data/log/'.self::LOGFILE);
     }
 
     //备份日志

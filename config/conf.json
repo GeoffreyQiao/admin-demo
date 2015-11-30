@@ -1,4 +1,12 @@
 {
-  "WebName":"Geo网站",
-  "userName":"Geoffrey"
+    "dbConfig":{
+        "host": "localhost",
+        "user": "root",
+        "pswd": "123",
+        "dbname": "geo",
+        "char": "UTF8"
+    },
+    
+    "WebName":"Geo网站",
+    "userName":"Geoffrey",
 }

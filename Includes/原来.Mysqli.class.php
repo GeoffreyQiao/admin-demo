@@ -20,7 +20,7 @@
 /**
  * ClassName: Mysql_Mod
  */
-class Mysql_Mod extends Db
+class Mysqli extends Db
 {
     private $conn = NULL;
     private $conf = array();
@@ -31,7 +31,7 @@ class Mysql_Mod extends Db
     public function __construct() 
     {
          //实例化self类
-        $this->conf = Conf::getIns();
+        $this->conf = Conf::getIns('mysqli');
         
         $this->connect( $this->conf->host, $this->conf->user, $this->conf->pswd );
 
@@ -40,11 +40,11 @@ class Mysql_Mod extends Db
          
         //设置字符编码
         $this->char( $this->conf->char );
-        
-        
+
     }
     public function __destruct() 
     {
+        $this->conn->close();
     }
     
     /*
@@ -53,7 +53,7 @@ class Mysql_Mod extends Db
       $u：用户名
       $p：密码
       return：bool 表示连接数据库成功状态  */
-    public function connect( $h, $u, $p )
+    protected function connect( $h, $u, $p )
     {
         $this->conn = mysqli_connect( $h, $u, $p );
         if( !$this->conn )
@@ -85,7 +85,7 @@ class Mysql_Mod extends Db
       return：mixed bool/resource        */
     public function query( $sql )
     {
-        $str = mysqli_query( $sql, $this->conn );
+        $str = $this->conn->query( $sql );
         Log::write( " SQL <<< " . $sql . "\r\n" );
         if( !$str )
         {

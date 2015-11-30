@@ -11,9 +11,6 @@ define( 'DS', DIRECTORY_SEPARATOR );
 define( 'ROOT', __DIR__ . DS );
 
 
-
-$th = new Mysql_Mod();
-
 function __autoload($name){
     $classname = strtolower(substr($name,-3));
 
@@ -31,7 +28,9 @@ function __autoload($name){
             break;
         
         default:
-            require ROOT . 'Includes/' . $name . '.class.php';
+            if (file_exists($include = ROOT . 'Includes/'. $name . '.class.php')) {
+                require_once $include;
+            }
             break;
     }
 }
