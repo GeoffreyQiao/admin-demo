@@ -81,71 +81,75 @@ abbr, acronym {
   /* line 63, _reset.scss */
   html {
     font-size: 0.2px; } }
-/**
- * reset style over!
- */
-/* line 6, style.scss */
-header nav h1 {
-  visibility: hidden; }
+/* line 4, admin.scss */
+html {
+  font-size: 6.25%;
+  color: #fff; }
 
-/* line 10, style.scss */
+/* line 9, admin.scss */
 body {
   height: 100vh;
   width: 100%;
   background: #352121; }
 
-/* line 16, style.scss */
-nav div.navbar {
-  height: 72vh;
-  width: 60vw;
-  box-shadow: 0 0 50rem 10rem #C4C2C2;
-  margin: 12vh auto;
-  border-radius: 40rem;
-  overflow: hidden; }
-
-/* line 25, style.scss */
-#nav-items {
-  height: inherit;
-  width: inherit;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-  background: #343858; }
-  /* line 33, style.scss */
-  .nav-item {
-    display: block; }
-    /* line 35, style.scss */
-    .nav-item a {
+/* line 15, admin.scss */
+header {
+  color: #fff;
+  height: 5vh;
+  background: #24518F; }
+  /* line 20, admin.scss */
+  header div.navbar {
+    width: 20%;
+    height: 100%;
+    background: #5E1383;
+    display: inline-block; }
+  /* line 28, admin.scss */
+  header div.nav-item {
+    width: 80%;
+    height: 100%;
+    float: right; }
+    /* line 32, admin.scss */
+    header div.nav-item li {
       display: block;
-      height: 24vh;
-      min-width: 20vw;
-      background: #343858;
-      line-height: 24vh;
-      font-size: 40rem;
-      color: #fff;
-      text-align: center; }
-      /* line 46, style.scss */
-      .nav-item a:hover {
-        background: #32779C;
-        border-radius: 35rem;
-        box-shadow: 0 0 40rem 10rem #C4C2C2;
-        font-size: 48rem;
-        position: relative;
-        z-index: 1; }
-        /* line 53, style.scss */
-        .nav-item a:hover .nav-item {
-          background: #343858;
-          position: absolute; }
+      width: 120rem;
+      margin-right: 30rem;
+      float: left;
+      background: #A55454; }
+  /* line 40, admin.scss */
+  .nav-item a {
+    margin: 0 auto;
+    line-height: 5vh;
+    width: 100%;
+    padding-left: 20rem;
+    font-size: 18rem;
+    color: #FFF;
+    height: 100%;
+    text-align: center; }
 
-/*# sourceMappingURL=style.css.map */
+/* line 51, admin.scss */
+div#left, div#right {
+  height: 95vh;
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 20rem; }
+
+/* line 59, admin.scss */
+div#left {
+  background: #0A7531;
+  float: left;
+  width: 20%; }
+
+/* line 65, admin.scss */
+div#right {
+  background: #8E540F;
+  float: right;
+  width: 80%; }
+  /* line 69, admin.scss */
+  div#right h2 {
+    line-height: 100%;
+    display: block;
+    text-align: center;
+    padding: 10rem 0; }
+
+/*# sourceMappingURL=admin.css.map */

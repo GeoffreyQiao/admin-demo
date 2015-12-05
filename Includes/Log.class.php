@@ -11,8 +11,8 @@ class Log{
       $time = date("Y:m:d H:i:s", time());
       $cont = $time .' >>> '. $cont ."\r\n";
       //判断符合条件的文件是否备份
-      $log = self::rSize();
-      $fh = fopen($log,'ab');
+      $log  = self::rSize();
+      $fh   = fopen($log,'ab');
       fwrite($fh,$cont);
       fclose($fh);
       clearstatcache(true,ROOT. 'data/log/'.self::LOGFILE);

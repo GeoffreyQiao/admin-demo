@@ -1,4 +1,7 @@
 @import "reset";
+/**
+ * reset style over!
+ */
 
 header nav h1 {
     visibility: hidden;
@@ -26,16 +29,33 @@ nav div.navbar {
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-around;
-    background-color: #C2C2C2;
-    & .nav-item {
+    background: #343858;;
+    @at-root.nav-item {
         display: block;
-        height: 24vh;
-        min-width: 20vw;
-        background: #343858;
-        line-height: 24vh;
-        font-size: 30rem;
-        color: #fff;
-        // border: 1px solid #000;
-        text-align: center;
+        & a{
+            display: block;
+            height: 24vh;
+            min-width: 20vw;
+            background: #343858;
+            line-height: 24vh;
+            font-size: 40rem;
+            color: #fff;
+            // border: 1px solid #000;
+            text-align: center;
+
+            &:hover{
+                background:#32779C;
+                border-radius: 35rem;
+                box-shadow: 0 0 40rem 10rem #C4C2C2;
+                font-size: 48rem;
+                position: relative;
+                z-index: 1;
+                .nav-item{
+                    background: #343858;
+                    position: absolute;
+                }
+            }
+        }
     }
 }
+

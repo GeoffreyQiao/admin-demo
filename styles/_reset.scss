@@ -43,3 +43,24 @@ a,a:hover,a:visited{
 abbr,acronym { 
     border: 0; 
 }
+
+@media screen and (min-width: 768px) and (max-width: 1080px){
+    html{
+        font-size: 0.7px;
+    }   
+}
+@media screen and (min-width: 420px) and (max-width: 768px){
+    html{
+        font-size: 0.5px;
+    }
+}
+@media screen and (max-width: 420px) and (min-width: 300px){
+    html{
+        font-size: 0.4px;
+    }    
+}
+@media screen and (max-width: 300px){
+    html{
+        font-size: 0.2px;
+    }
+}

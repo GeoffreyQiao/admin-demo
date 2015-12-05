@@ -20,8 +20,17 @@
 
 class Parser
 {
-  private $tpl = null;
+  private $tpl     = null;
   private $proVars = array();
+  private $parStr =arrary(
+      "parVar"=>array(
+        'pStr''/\{\$([\w]+)\}/'
+        )
+      "parIf"=>array(
+          '/\{if\s*\$([\w]+)\}/',
+
+        );
+    );
   
   function __construct( $tplFile )
   {
@@ -34,7 +43,8 @@ class Parser
   //解析普通变量
   private function parVar() 
   {
-    $pStr = '/\{\$([\w]+)\}/';
+    $pStr = '/\{\s*\$([\w]+)\s*\}/';
+    //like: { $var }
     if( preg_match( $pStr, $this->tpl ) )
     {
       $this->tpl = preg_replace( $pStr, "<?php echo \$this->values['$1']; ?>", $this->tpl );
@@ -44,10 +54,14 @@ class Parser
   //解析IF语句
   private function parIf() 
   {
-    $if = '/\{if\s*\$([\w]+)\}/';
-    $endIf = '/\{\s*\/if\s*\}/';
-    $else = '/\{\s*else\s*\}/';
-    $elseIf = '/\{\s*else\s*if\s*\$([\w]+)\}/';
+    $if     = '/\{\s*if\s*\$([\w]+)\s*\}/';
+    //like: { if $var }
+    $endIf  = '/\{\s*\/if\s*\}/';
+    //like: { /if }
+    $else   = '/\{\s*else\s*\}/';
+    //like: { else }
+    $elseIf = '/\{\s*else\s*if\s+\$([\w]+)\s*\}/';
+    //like: { elseif $var }
     
     if( preg_match( $if, $this->tpl ) )
     
@@ -102,9 +116,9 @@ class Parser
   //解析foreach语句
   private function parForeach() 
   {
-    $foreach = '/\{\s*foreach\s+\$([\w]+)\s*\(\s*([\w]+),\s*([\w]+)\s*\)\s*\}/';
+    $foreach    = '/\{\s*foreach\s+\$([\w]+)\s*\(\s*([\w]+),\s*([\w]+)\s*\)\s*\}/';
     $endForeach = '/\{\s*\/foreach\s*\}/';
-    $parVar = '/\{@([\w]+)\s*\}/';
+    $parVar     = '/\{@([\w]+)\s*\}/';
     
     if( preg_match( $foreach, $this->tpl ) && preg_match( $endForeach, $this->tpl ) )
     {
@@ -126,7 +140,8 @@ class Parser
   //解析{include}语句
   private function parInclude() 
   {
-    $include = '/\{include\s+file\s*=\s*(\"|\')([\w\.\-\/]+)(\"|\')\}/';
+    $include = '/\{include\s+file\s*=\s*(\"|\')([\w\.\-\/\\]+)(\"|\')\}/';
+    //like: {include file = ""}
     if( preg_match( $include, $this->tpl, $file ) )
     {
       if( !file_exists( $file[2] ) || empty( $file ) )
@@ -163,7 +178,7 @@ class Parser
     //生成编译文件
     if( !file_put_contents( $parFile, $this->tpl ) )
     {
-      exit( 'ERR: Tpl文件编译出错，未成功生成Par编译文件！' );
+      exit( 'ERR: Tpl文件编译出错，未成功生成模板编译文件！' );
     }
   }
 }

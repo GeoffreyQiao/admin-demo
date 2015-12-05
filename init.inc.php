@@ -10,11 +10,28 @@ define( 'DS', DIRECTORY_SEPARATOR );
 
 define( 'ROOT', __DIR__ . DS );
 
+//模板目录
+define( 'TPL', ROOT . 'templates' . DS );
+
+//编译文件目录
+define( 'TPL_C', ROOT . 'templates_c' . DS );
+
+//静态页面缓存文件目录
+define( 'CACHE', ROOT . 'cache' . DS );
+
+//模板缓存开关
+$turnOnCache = false;       //true or false
+if (defined('ADMIN')) {
+    define('IS_CACHE', false);  
+}else {
+    define('IS_CACHE', $turnOnCache);    
+}
+
 
 function __autoload($name){
-    $classname = strtolower(substr($name,-3));
+    $className = strtolower(substr($name,-3));
 
-    switch ($classname) {
+    switch ($className) {
         case 'mod':
             require ROOT . 'Models/' . $name . '.php';
             break;
@@ -24,7 +41,7 @@ function __autoload($name){
             break;
 
         case 'con':
-            require ROOT . 'Controlers/' . $name . '.php';
+            require ROOT . 'Controllers/' . $name . '.php';
             break;
         
         default:

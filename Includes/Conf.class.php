@@ -15,7 +15,7 @@
 class Conf
 {
     protected static $ins = null;
-    protected $data = array();
+    protected $data       = array();
     final protected function __construct()
     {
         

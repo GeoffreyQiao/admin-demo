@@ -1,7 +1,7 @@
 {
-    "host": "localhost",
-    "user": "root",
-    "pswd": "123",
-    "dbname": "geo",
-    "char": "UTF8"
+	"host"  : "localhost",
+	"user"  : "root",
+	"pswd"  : "123",
+	"dbname": "video",
+	"char"  : "UTF8"
 }

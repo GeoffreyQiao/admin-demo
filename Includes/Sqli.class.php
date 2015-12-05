@@ -2,25 +2,25 @@
 
 class Sqli {
     protected $mysqli;                              //mysqli实例对象
-    protected $conf = array();                  //config配置信息
-    public $sql;                                          //sql语句
+    protected $conf       = array();                  //config配置信息
+    public    $sql;                                          //sql语句
     protected $rs;                                      //结果集
-    protected $query_num    = 0;            //执行次数
-    protected $fetch_mode   = MYSQLI_ASSOC;     //获取模式
+    protected $query_num  = 0;            //执行次数
+    protected $fetch_mode = MYSQLI_ASSOC;     //获取模式
     protected $cache;                               //缓存类对象
     protected $reload     = false;             //是否重新载入
     protected $cache_mark = true;        //缓存标记
 
     //构造函数：主要用来返回一个mysqli对象
     public function  __construct() {
-        $this->conf = json_decode(file_get_contents(ROOT.'config'.DS.'db.json',true));
-        print_r($this->conf);
-        $this->mysqli    = new mysqli($this->conf->host, $this->conf->user, $this->conf->pswd, $this->conf->dbname);
-        if(mysqli_connect_errno()) {
-            $this->mysqli    = false;
+            $this->conf   = json_decode(file_get_contents(ROOT.'config'.DS.'db.json'),true);
+
+            $this->mysqli = new mysqli($this->conf['host'], $this->conf['user'], $this->conf['pswd'], $this->conf['dbname']);
+            if(mysqli_connect_errno()) {
+            $this->mysqli = false;
             die(mysqli_connect_error());
         } else {
-            $this->mysqli->set_charset($this->conf->char);
+            $this->mysqli->set_charset($this->conf['char']);
         }
     }
 
@@ -47,7 +47,7 @@ class Sqli {
 
     //获取结果集
     protected function fetch() {
-        return $this->rs->fetch_array($this->*fetch_mode);
+        return $this->rs->fetch_array($this->fetch_mode);
     }
 
     //获取查询的sql语句
@@ -60,10 +60,10 @@ class Sqli {
 
     //从缓存中获取数据
     protected function get_cache($sql,$method) {
-        $cache_file    = md5($sql.$method);
-        $res    = $this->cache->get($cache_file);
-        if(!$res) {                         //如果缓存文件过期或不存在的话，返回false；如果缓存文件存在且未过期的话，则返回缓存数据
-            $res    = $this->$method($sql); //先从缓存中取数据，如果缓存中没数据，则从数据库中取数据
+            $cache_file = md5($sql.$method);
+            $res        = $this->cache->get($cache_file);
+            if(!$res) {                         //如果缓存文件过期或不存在的话，返回false；如果缓存文件存在且未过期的话，则返回缓存数据
+                $res    = $this->$method($sql); //先从缓存中取数据，如果缓存中没数据，则从数据库中取数据
             if($res && $this->cache_mark && !$this->reload) {
                 $this->cache->set($cache_file, $res);//如果缓存文件过期或不存在的话，将重新将从数据库中查询的数据放入缓存文件
             }
@@ -78,8 +78,8 @@ class Sqli {
 
     //执行sql语句查询
     public function query($sql, $limit = null) {
-        $sql    = $this->get_query_sql($sql, $limit);
-        $this->sql[]    = $sql;
+        $sql         = $this->get_query_sql($sql, $limit);
+        $this->sql[] = $sql;
         $this->rs    = $this->mysqli->query($sql);
         if (!$this->rs) {
             echo "<p>error: ".$this->mysqli->error."</p>";
@@ -94,40 +94,40 @@ class Sqli {
     //返回单条记录的单个字段值
     public function get_one($sql) {
         $this->query($sql, 1);
-        $this->fetch_mode    = MYSQLI_NUM;
-        $row = $this->fetch();
+        $this->fetch_mode = MYSQLI_NUM;
+        $row              = $this->fetch();
         $this->free();
         return $row[0];
     }
 
     //缓存单个字段
     public function cache_one($sql, $reload = false) {
-        $this->reload   = $reload;
-        $sql    = $this->get_query_sql($sql, 1);
+        $this->reload = $reload;
+        $sql          = $this->get_query_sql($sql, 1);
         return $this->get_cache($sql, 'get_one');
     }
 
     //获取单条记录
     public function get_row($sql, $fetch_mode = MYSQLI_ASSOC) {
         $this->query($sql, 1);
-        $this->fetch_mode    = $fetch_mode;
-        $row = $this->fetch();
+        $this->fetch_mode = $fetch_mode;
+        $row              = $this->fetch();
         $this->free();
         return $row;
     }
 
     //缓存行
     public function cache_row($sql, $reload = false) {
-        $this->reload   = $reload;
-        $sql    = $this->get_query_sql($sql, 1);
+        $this->reload = $reload;
+        $sql          = $this->get_query_sql($sql, 1);
         return $this->get_cache($sql, 'get_row');
     }
 
     //返回所有的结果集
     public function get_all($sql, $limit = null, $fetch_mode = MYSQLI_ASSOC) {
         $this->query($sql, $limit);
-        $all_rows = array();
-        $this->fetch_mode    = $fetch_mode;
+        $all_rows         = array();
+        $this->fetch_mode = $fetch_mode;
         while($rows = $this->fetch()) {
             $all_rows[] = $rows;
         }
@@ -137,8 +137,8 @@ class Sqli {
 
     //缓存all
     public function cache_all($sql, $reload = false, $limit = null) {
-        $this->reload   = $reload;
-        $sql    = $this->get_query_sql($sql, $limit);
+        $this->reload = $reload;
+        $sql          = $this->get_query_sql($sql, $limit);
         return $this->get_cache($sql, 'get_all');
     }
 
@@ -165,14 +165,10 @@ class Sqli {
                 $values[$i] = $val; //将所有的值放到一个$values[]数组中
                 $i++;
             }
-            $s_fields = "(".implode(",",$fields).")";
-            $s_values  = "('".implode("','",$values)."')";
-            $sql = "INSERT INTO
-                        $tbl_name
-                        $s_fields
-                    VALUES
-                        $s_values";
-            Return $sql;
+                $s_fields = "(".implode(",",$fields).")";
+                $s_values = "('".implode("','",$values)."')";
+                $sql      = "INSERT INTO $tbl_name $s_fields VALUES $s_values";
+                Return $sql;
         }
         else
         {
@@ -183,7 +179,7 @@ class Sqli {
     /**
      * 获取替换语句:replace into是insert into的增强版
      * 区别：replace into跟insert功能类似，不同点在于：replace into 首先尝试插入数据到表中，如果发现表中
-             已经有此行数据(根据主键或唯一索引判断)，则先删除此行数据，然后插入新的数据，否则直接插入新数据
+     *       已经有此行数据(根据主键或唯一索引判断)，则先删除此行数据，然后插入新的数据，否则直接插入新数据
      * @param    string     $tbl_name   表名
      * @param    array      $info       数据
      */
@@ -199,12 +195,8 @@ class Sqli {
                 $i++;
             }
             $s_fields = "(".implode(",",$fields).")";
-            $s_values  = "('".implode("','",$values)."')";
-            $sql = "REPLACE INTO
-                        $tbl_name
-                        $s_fields
-                    VALUES
-                        $s_values";
+            $s_values = "('".implode("','",$values)."')";
+            $sql      = "REPLACE INTO $tbl_name $s_fields VALUES $s_values";
             Return $sql;
         }
         else
@@ -222,7 +214,7 @@ class Sqli {
      */
     public function get_update_db_sql($tbl_name,$info,$condition)
     {
-        $i = 0;
+        $i    = 0;
         $data = '';
         if(is_array($info)&&!empty($info))
         {
@@ -263,8 +255,8 @@ class Sqli {
 
     public function real_get($sql, $fetch_mode = MYSQLI_ASSOC) {
         $this->query($sql);
-        $this->fetch_mode    = $fetch_mode;
-        $row = $this->fetch();
+        $this->fetch_mode = $fetch_mode;
+        $row              = $this->fetch();
         $this->free();
         return $row;
     }

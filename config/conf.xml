@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<root>
-    <host>localhost</host>
-    <user>root</user>
-    <pswd>123</pswd>
-    <dbname>geo</dbname>
-    <char>UTF8</char>
-</root>

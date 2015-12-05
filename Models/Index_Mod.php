@@ -5,7 +5,7 @@
 */
 class Index_Mod extends Sqli
 {
-    public $table = 'cat';
+    private $table = 'cat';
     // function __construct(argument)
     // {
     //     # code...
