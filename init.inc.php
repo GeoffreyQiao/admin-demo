@@ -4,10 +4,16 @@
 * Function list:
 * Classes list:
 */
+//设定默认页面类型、字符集
 header( 'Content-Type:text/html;charset=utf-8' );
 
+//设置默认时区为PRC（中国）
+date_default_timezone_set('PRC');
+
+//定义DS代表系统默认分隔符"\"或者"/"
 define( 'DS', DIRECTORY_SEPARATOR );
 
+//定义项目基础路径
 define( 'ROOT', __DIR__ . DS );
 
 //模板目录
@@ -20,9 +26,9 @@ define( 'TPL_C', ROOT . 'templates_c' . DS );
 define( 'CACHE', ROOT . 'cache' . DS );
 
 //模板缓存开关
-// $turnOnCache = true;       //true or false
+$turnOnCache = false;       //true or false
 // if (defined('ADMIN')) {
-    define('IS_CACHE', false);
+define('IS_CACHE', $turnOnCache);
 // }else {
 //     define('IS_CACHE', $turnOnCache);
 // }
