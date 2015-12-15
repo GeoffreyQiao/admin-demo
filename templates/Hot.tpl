@@ -8,5 +8,5 @@
     <link href="../styles/cate.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-	<h2>这是Hot Page</h2>
+	<h1>这是Hot Page</h1>
 </html>
