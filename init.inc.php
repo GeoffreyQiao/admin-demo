@@ -20,12 +20,12 @@ define( 'TPL_C', ROOT . 'templates_c' . DS );
 define( 'CACHE', ROOT . 'cache' . DS );
 
 //模板缓存开关
-$turnOnCache = false;       //true or false
-if (defined('ADMIN')) {
-    define('IS_CACHE', false);  
-}else {
-    define('IS_CACHE', $turnOnCache);    
-}
+// $turnOnCache = true;       //true or false
+// if (defined('ADMIN')) {
+    define('IS_CACHE', false);
+// }else {
+//     define('IS_CACHE', $turnOnCache);
+// }
 
 
 function __autoload($name){
@@ -43,7 +43,7 @@ function __autoload($name){
         case 'con':
             require ROOT . 'Controllers/' . $name . '.php';
             break;
-        
+
         default:
             if (file_exists($include = ROOT . 'Includes/'. $name . '.class.php')) {
                 require_once $include;

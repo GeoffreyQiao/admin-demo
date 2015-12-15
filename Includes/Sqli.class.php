@@ -15,7 +15,7 @@ class Sqli {
     public function  __construct() {
             $this->conf   = json_decode(file_get_contents(ROOT.'config'.DS.'db.json'),true);
 
-            $this->mysqli = new mysqli($this->conf['host'], $this->conf['user'], $this->conf['pswd'], $this->conf['dbname']);
+            $this->mysqli = new mysqli($this->conf['host'].':'.$this->conf['port'], $this->conf['user'], $this->conf['pswd'], $this->conf['dbname']);
             if(mysqli_connect_errno()) {
             $this->mysqli = false;
             die(mysqli_connect_error());
@@ -79,7 +79,7 @@ class Sqli {
     //执行sql语句查询
     public function query($sql, $limit = null) {
         $sql         = $this->get_query_sql($sql, $limit);
-        $this->sql[] = $sql;
+        $this->sql = $sql;
         $this->rs    = $this->mysqli->query($sql);
         if (!$this->rs) {
             echo "<p>error: ".$this->mysqli->error."</p>";
@@ -144,9 +144,9 @@ class Sqli {
 
     //返回前一次mysql操作所影响的记录行数
     public function affected_rows() {
-        return $this->mysqli->affected_rows;
+        return $this->mysqli->affected_rows();
     }
-    
+
      /**
      * 获取插入语句
      *
@@ -154,7 +154,7 @@ class Sqli {
      * @param    array      $info       数据
      */
     public function get_insert_db_sql($tbl_name,$info)
-    {   
+    {
         //首先判断是否为数组，再判断数组是否为空
         if(is_array($info)&&!empty($info))
         {
@@ -175,7 +175,7 @@ class Sqli {
             Return false;
         }
     }
-        
+
     /**
      * 获取替换语句:replace into是insert into的增强版
      * 区别：replace into跟insert功能类似，不同点在于：replace into 首先尝试插入数据到表中，如果发现表中
@@ -204,7 +204,7 @@ class Sqli {
             Return false;
         }
     }
-    
+
   /**
      * 获取更新SQL语句
      *
@@ -233,7 +233,7 @@ class Sqli {
                     }
                     $i++;
                 }
-            }   
+            }
             $sql = "UPDATE ".$tbl_name." SET ".$data." WHERE ".$condition;
             return $sql;
         }
@@ -242,7 +242,7 @@ class Sqli {
             Return false;
         }
     }
-    
+
     /**
      * 取得数据库最后一个插入ID
      *
@@ -251,7 +251,7 @@ class Sqli {
     public function last_id() {
         return mysqli_insert_id($this->mysqli);
     }
-    
+
 
     public function real_get($sql, $fetch_mode = MYSQLI_ASSOC) {
         $this->query($sql);

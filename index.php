@@ -1,5 +1,7 @@
 <?php
 
-require 'init.inc.php';   
+require 'init.inc.php';
 $obj = Index_Con::getIns();
-$obj->show();
+$obj->action();
+$obj->showCat();
+echo __DIR__;

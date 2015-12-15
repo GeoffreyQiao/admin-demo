@@ -6,10 +6,14 @@
 class Index_Mod extends Sqli
 {
     private $table = 'cat';
-    // function __construct(argument)
-    // {
-    //     # code...
-    // }
-    
+    public function pageLoad()
+    {
+        $sql = "select catName, name, Id from $this->table where parentId = 0";
+        $rs = $this->get_all($sql);
+        return $rs;
+    }
 
+    public function sourceLoad(){
+        $sql = "select ";
+    }
 }

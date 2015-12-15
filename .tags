@@ -1,227 +1,478 @@
 !_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
-!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
 !_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-CACHE	.\config\conf.inc.php	/^define( 'CACHE', ROOT . 'cache' . DS );$/;"	d
-Conf	.\Includes\Conf.class.php	/^class Conf$/;"	c
-DS	.\init.inc.php	/^define( 'DS', DIRECTORY_SEPARATOR );$/;"	d
-Db	.\Includes\Db.class.php	/^abstract class Db$/;"	c
-Index_Mod	.\Models\Index_Mod.php	/^class Index_Mod extends Sqli$/;"	c
-Log	.\Includes\Log.class.php	/^class Log{$/;"	c
-Mysql	.\Includes\Mysql.class.php	/^class Mysql extends mysqli$/;"	c
-Mysqli	.\Includes\ԭ��.Mysqli.class.php	/^class Mysqli extends Db$/;"	c
-Parser	.\Includes\Parser.class.php	/^class Parser$/;"	c
-ROOT	.\init.inc.php	/^define( 'ROOT', __DIR__ . DS );$/;"	d
-Sqli	.\Includes\Sqli.class.php	/^class Sqli {$/;"	c
-TPL	.\config\conf.inc.php	/^define( 'TPL', ROOT . 'templates' . DS );$/;"	d
-TPL_C	.\config\conf.inc.php	/^define( 'TPL_C', ROOT . 'templates_c' . DS );$/;"	d
-Templates	.\Includes\Templates.class.php	/^class Templates$/;"	c
-_AddSlashes	.\Includes\Lib_base.php	/^  function _AddSlashes($arr){$/;"	f
-__autoload	.\init.inc.php	/^function __autoload($name){$/;"	f
-__clone	.\Includes\Conf.class.php	/^    final protected function __clone() $/;"	f
-__construct	.\Includes\Conf.class.php	/^    final protected function __construct()$/;"	f
-__construct	.\Includes\Mysql.class.php	/^    function __construct()$/;"	f
-__construct	.\Includes\Parser.class.php	/^  function __construct( $tplFile )$/;"	f
-__construct	.\Includes\Sqli.class.php	/^    public function  __construct() {$/;"	f
-__construct	.\Includes\Templates.class.php	/^  function __construct() $/;"	f
-__construct	.\Includes\ԭ��.Mysqli.class.php	/^    public function __construct() $/;"	f
-__construct	.\Models\Index_Mod.php	/^    \/\/ function __construct(argument)$/;"	f
-__destruct	.\Includes\Mysql.class.php	/^    public function __destruct() $/;"	f
-__destruct	.\Includes\Sqli.class.php	/^    public function  __destruct() {$/;"	f
-__destruct	.\Includes\ԭ��.Mysqli.class.php	/^    public function __destruct() $/;"	f
-__get	.\Includes\Conf.class.php	/^    public function __get( $key )$/;"	f
-__set	.\Includes\Conf.class.php	/^    public function __set( $key, $value )$/;"	f
-act	.\Includes\Db.class.php	/^    public abstract function autoExcute( $table, $data, $act = 'insert', $where = '' );$/;"	v
-affected_rows	.\Includes\Mysql.class.php	/^    public function affected_rows(){$/;"	f
-affected_rows	.\Includes\Sqli.class.php	/^    public function affected_rows() {$/;"	f
-affected_rows	.\Includes\ԭ��.Mysqli.class.php	/^    public function affected_rows() $/;"	f
-all_rows	.\Includes\Sqli.class.php	/^        $all_rows         = array();$/;"	v
-arr	.\index.php	/^\/\/ $arr = json_decode($str,true);$/;"	v
-assign	.\Includes\Templates.class.php	/^  public function assign( $key, $value )$/;"	f
-autoExcute	.\Includes\Db.class.php	/^    public abstract function autoExcute( $table, $data, $act = 'insert', $where = '' );$/;"	f
-autoExcute	.\Includes\Mysql.class.php	/^    public function autoExcute($arr, $table, $mode = 'insert', $where = 'where 1 limit 1'){$/;"	f
-autoExcute	.\Includes\ԭ��.Mysqli.class.php	/^    public function autoExcute( $arr, $table, $mode = 'insert', $where = ' where 1 limit 1' )$/;"	f
-bak	.\Includes\Log.class.php	/^      $bak = ROOT . 'data\/log\/'.date('ymdHis').'.bak';$/;"	v
-bak	.\Includes\Log.class.php	/^    public static function bak(){$/;"	f
-cache	.\Includes\Sqli.class.php	/^        $this->cache    = $cache;$/;"	v
-cache	.\Includes\Sqli.class.php	/^    protected $cache;                               \/\/缓存类对象$/;"	v
-cacheFile	.\Includes\Templates.class.php	/^    $cacheFile = CACHE . md5( $file ) . $file . '.html';$/;"	v
-cache_all	.\Includes\Sqli.class.php	/^    public function cache_all($sql, $reload = false, $limit = null) {$/;"	f
-cache_file	.\Includes\Sqli.class.php	/^            $cache_file = md5($sql.$method);$/;"	v
-cache_mark	.\Includes\Sqli.class.php	/^    protected $cache_mark = true;        \/\/缓存标记$/;"	v
-cache_obj	.\Includes\Sqli.class.php	/^    public function cache_obj($cache) {$/;"	f
-cache_one	.\Includes\Sqli.class.php	/^    public function cache_one($sql, $reload = false) {$/;"	f
-cache_row	.\Includes\Sqli.class.php	/^    public function cache_row($sql, $reload = false) {$/;"	f
-char	.\Includes\ԭ��.Mysqli.class.php	/^    protected function char( $char )$/;"	f
-classname	.\init.inc.php	/^    $classname = strtolower(substr($name,-3));$/;"	v
-close	.\Includes\Sqli.class.php	/^    protected function close() {$/;"	f
-compile	.\Includes\Parser.class.php	/^  public function compile( $parFile )$/;"	f
-conStr	.\Includes\Parser.class.php	/^    $conStr = '\/<!--\\{\\s*([\\w]+)\\s*\\}-->\/';$/;"	v
-conf	.\Includes\Conf.class.php	/^   $conf = conf::getIns();$/;"	v
-conf	.\Includes\Mysql.class.php	/^       $this->conf = Conf::getIns();$/;"	v
-conf	.\Includes\Mysql.class.php	/^       \/* $this->conf = Conf::getIns();*\/$/;"	v
-conf	.\Includes\Mysql.class.php	/^    protected $conf = array();$/;"	v
-conf	.\Includes\Sqli.class.php	/^            $this->conf   = json_decode(file_get_contents(ROOT.'config'.DS.'db.json'),true);$/;"	v
-conf	.\Includes\Sqli.class.php	/^    protected $conf       = array();                  \/\/config配置信息$/;"	v
-conf	.\Includes\ԭ��.Mysqli.class.php	/^        $this->conf = Conf::getIns('mysqli');$/;"	v
-conf	.\Includes\ԭ��.Mysqli.class.php	/^    private $conf = array();$/;"	v
-conn	.\Includes\Mysql.class.php	/^        $this->conn = new mysqli($h, $u, $p, $d);$/;"	v
-conn	.\Includes\Mysql.class.php	/^    protected $conn = NULL;$/;"	v
-conn	.\Includes\ԭ��.Mysqli.class.php	/^        $this->conn = mysqli_connect( $h, $u, $p );$/;"	v
-conn	.\Includes\ԭ��.Mysqli.class.php	/^    private $conn = NULL;$/;"	v
-connect	.\Includes\Db.class.php	/^    public abstract function connect( $h, $u, $p, $d, $c );$/;"	f
-connect	.\Includes\Mysql.class.php	/^    public function connect( $h, $u, $p, $d, $c )$/;"	f
-connect	.\Includes\ԭ��.Mysqli.class.php	/^    protected function connect( $h, $u, $p )$/;"	f
-cont	.\Includes\Log.class.php	/^      $cont = $time .' >>> '. $cont ."\\r\\n";$/;"	v
-create	.\Includes\Templates.class.php	/^  public function create($file)$/;"	f
-data	.\Includes\Conf.class.php	/^        $this->data = new  SimpleXMLElement ( ROOT.'config\/conf.xml' ,  NULL ,  TRUE );$/;"	v
-data	.\Includes\Conf.class.php	/^    protected $data = array();$/;"	v
-data	.\Includes\Sqli.class.php	/^                        $data = $key."='".$val."'"; \/\/第一次：如，update 表名 set username='admin'$/;"	v
-data	.\Includes\Sqli.class.php	/^        $data = '';$/;"	v
-display	.\Includes\Templates.class.php	/^  public function display( $file )$/;"	f
-else	.\Includes\Parser.class.php	/^    $else = '\/\\{\\s*else\\s*\\}\/';$/;"	v
-elseIf	.\Includes\Parser.class.php	/^    $elseIf = '\/\\{\\s*else\\s*if\\s*\\$([\\w]+)\\}\/';$/;"	v
-endForeach	.\Includes\Parser.class.php	/^    $endForeach = '\/\\{\\s*\\\/foreach\\s*\\}\/';$/;"	v
-endIf	.\Includes\Parser.class.php	/^    $endIf = '\/\\{\\s*\\\/if\\s*\\}\/';$/;"	v
-error	.\Includes\Mysql.class.php	/^            $error = ("失败 <<< 数据库连接" );$/;"	v
-error	.\Includes\ԭ��.Mysqli.class.php	/^            $error = new Exception( "失败 <<< 数据库连接" );$/;"	v
-fetch	.\Includes\Sqli.class.php	/^    protected function fetch() {$/;"	f
-fetch_mode	.\Includes\Sqli.class.php	/^        $this->fetch_mode    = $fetch_mode;$/;"	v
-fetch_mode	.\Includes\Sqli.class.php	/^        $this->fetch_mode = $fetch_mode;$/;"	v
-fetch_mode	.\Includes\Sqli.class.php	/^        $this->fetch_mode = MYSQLI_NUM;$/;"	v
-fetch_mode	.\Includes\Sqli.class.php	/^    protected $fetch_mode = MYSQLI_ASSOC;     \/\/获取模式$/;"	v
-fetch_mode	.\Includes\Sqli.class.php	/^    public function get_row($sql, $fetch_mode = MYSQLI_ASSOC) {$/;"	v
-fetch_mode	.\Includes\Sqli.class.php	/^    public function real_get($sql, $fetch_mode = MYSQLI_ASSOC) {$/;"	v
-fh	.\Includes\Log.class.php	/^      $fh = fopen($log,'ab');$/;"	v
-foreach	.\Includes\Parser.class.php	/^    $foreach = '\/\\{\\s*foreach\\s+\\$([\\w]+)\\s*\\(\\s*([\\w]+),\\s*([\\w]+)\\s*\\)\\s*\\}\/';$/;"	v
-free	.\Includes\Sqli.class.php	/^    protected function free() {$/;"	f
-getAll	.\Includes\Db.class.php	/^    public abstract function getAll( $sql );$/;"	f
-getAll	.\Includes\Mysql.class.php	/^    public function getAll( $sql ){$/;"	f
-getAll	.\Includes\ԭ��.Mysqli.class.php	/^    public function getAll( $sql )$/;"	f
-getIns	.\Includes\Conf.class.php	/^    public static function getIns() $/;"	f
-getOne	.\Includes\Db.class.php	/^    public abstract function getOne( $sql );$/;"	f
-getOne	.\Includes\Mysql.class.php	/^    public function getOne($sql){$/;"	f
-getOne	.\Includes\ԭ��.Mysqli.class.php	/^    public function getOne( $sql )$/;"	f
-getRow	.\Includes\Db.class.php	/^    public abstract function getRow( $sql );$/;"	f
-getRow	.\Includes\Mysql.class.php	/^    public function getRow($sql){$/;"	f
-getRow	.\Includes\ԭ��.Mysqli.class.php	/^    public function getRow( $sql )$/;"	f
-get_all	.\Includes\Sqli.class.php	/^    public function get_all($sql, $limit = null, $fetch_mode = MYSQLI_ASSOC) {$/;"	f
-get_cache	.\Includes\Sqli.class.php	/^    protected function get_cache($sql,$method) {$/;"	f
-get_insert_db_sql	.\Includes\Sqli.class.php	/^    public function get_insert_db_sql($tbl_name,$info)$/;"	f
-get_one	.\Includes\Sqli.class.php	/^    public function get_one($sql) {$/;"	f
-get_query_sql	.\Includes\Sqli.class.php	/^    protected function get_query_sql($sql, $limit = null) {$/;"	f
-get_replace_db_sql	.\Includes\Sqli.class.php	/^    public function get_replace_db_sql($tbl_name,$info)$/;"	f
-get_row	.\Includes\Sqli.class.php	/^    public function get_row($sql, $fetch_mode = MYSQLI_ASSOC) {$/;"	f
-get_update_db_sql	.\Includes\Sqli.class.php	/^    public function get_update_db_sql($tbl_name,$info,$condition)$/;"	f
-i	.\Includes\Sqli.class.php	/^            $i = 0;$/;"	v
-i	.\Includes\Sqli.class.php	/^        $i = 0;$/;"	v
-if	.\Includes\Parser.class.php	/^    $if = '\/\\{if\\s*\\$([\\w]+)\\}\/';$/;"	v
-include	.\Includes\Parser.class.php	/^    $include = '\/\\{include\\s+file\\s*=\\s*(\\"|\\')([\\w\\.\\-\\\/]+)(\\"|\\')\\}\/';$/;"	v
-ins	.\Includes\Conf.class.php	/^    protected static $ins = null;$/;"	v
-k	.\Includes\Templates.class.php	/^    foreach( $tagLib as $k => $v )$/;"	v
-k	.\Includes\ԭ��.Mysqli.class.php	/^            foreach( $arr as $k => $v )$/;"	v
-key	.\Includes\Lib_base.php	/^      foreach ($arr as $key => $value) {$/;"	v
-key	.\Includes\Mysql.class.php	/^            foreach ($arr as $key => $value) {$/;"	v
-key	.\Includes\Sqli.class.php	/^            foreach( $info as $key=>$val )$/;"	v
-key	.\Includes\Sqli.class.php	/^            foreach($info as $key=>$val)$/;"	v
-last_id	.\Includes\Sqli.class.php	/^    public function last_id() {$/;"	f
-limit	.\Includes\Sqli.class.php	/^    protected function get_query_sql($sql, $limit = null) {$/;"	v
-limit	.\Includes\Sqli.class.php	/^    public function get_all($sql, $limit = null, $fetch_mode = MYSQLI_ASSOC) {$/;"	v
-limit	.\Includes\Sqli.class.php	/^    public function query($sql, $limit = null) {$/;"	v
-list	.\Includes\Mysql.class.php	/^        $list = array();$/;"	v
-list	.\Includes\ԭ��.Mysqli.class.php	/^        $list = array();$/;"	v
-log	.\Includes\Log.class.php	/^      $log = ROOT . 'data\/log\/' . self::LOGFILE ;$/;"	v
-log	.\Includes\Log.class.php	/^      $log = self::rSize();$/;"	v
-mode	.\Includes\Mysql.class.php	/^    public function autoExcute($arr, $table, $mode = 'insert', $where = 'where 1 limit 1'){$/;"	v
-mode	.\Includes\ԭ��.Mysqli.class.php	/^        if( $mode === 'update' )$/;"	v
-mode	.\Includes\ԭ��.Mysqli.class.php	/^    public function autoExcute( $arr, $table, $mode = 'insert', $where = ' where 1 limit 1' )$/;"	v
-mysqli	.\Includes\Sqli.class.php	/^            $this->mysqli = false;$/;"	v
-mysqli	.\Includes\Sqli.class.php	/^            $this->mysqli = new mysqli($this->conf['host'], $this->conf['user'], $this->conf['pswd'], $this->conf['dbname']);$/;"	v
-mysqli	.\Includes\Sqli.class.php	/^    protected $mysqli;                              \/\/mysqli实例对象$/;"	v
-pCom	.\Includes\Parser.class.php	/^    $pCom = '\/\\{#(.*)#\\}\/';$/;"	v
-pStr	.\Includes\Parser.class.php	/^    $pStr = '\/\\{\\$([\\w]+)\\}\/';$/;"	v
-parCommon	.\Includes\Parser.class.php	/^  private function parCommon() $/;"	f
-parConfig	.\Includes\Parser.class.php	/^  private function parConfig() $/;"	f
-parFile	.\Includes\Templates.class.php	/^    $parFile = TPL_C . md5( $file ) . $file . '.php';$/;"	v
-parFile	.\Includes\Templates.class.php	/^    $parFile = TPL_C . md5($file) . $file . '.php';$/;"	v
-parForeach	.\Includes\Parser.class.php	/^  private function parForeach() $/;"	f
-parIf	.\Includes\Parser.class.php	/^  private function parIf() $/;"	f
-parInclude	.\Includes\Parser.class.php	/^  private function parInclude() $/;"	f
-parVar	.\Includes\Parser.class.php	/^    $parVar = '\/\\{@([\\w]+)\\s*\\}\/';$/;"	v
-parVar	.\Includes\Parser.class.php	/^  private function parVar() $/;"	f
-parser	.\Includes\Templates.class.php	/^      $parser = new Parser( $tplFile );$/;"	v
-proConfigs	.\Includes\Templates.class.php	/^  private $proConfigs = array();$/;"	v
-proVars	.\Includes\Parser.class.php	/^  private $proVars = array();$/;"	v
-query	.\Includes\Db.class.php	/^    public abstract function query( $sql );$/;"	f
-query	.\Includes\Mysql.class.php	/^    public function query($sql){$/;"	f
-query	.\Includes\Sqli.class.php	/^    public function query($sql, $limit = null) {$/;"	f
-query	.\Includes\ԭ��.Mysqli.class.php	/^    public function query( $sql )$/;"	f
-query_num	.\Includes\Sqli.class.php	/^    protected $query_num  = 0;            \/\/执行次数$/;"	v
-query_num	.\Includes\Sqli.class.php	/^    public function query_num() {$/;"	f
-rSize	.\Includes\Log.class.php	/^    public static function rSize(){$/;"	f
-real_get	.\Includes\Sqli.class.php	/^    public function real_get($sql, $fetch_mode = MYSQLI_ASSOC) {$/;"	f
-reload	.\Includes\Sqli.class.php	/^        $this->reload   = $reload;$/;"	v
-reload	.\Includes\Sqli.class.php	/^        $this->reload = $reload;$/;"	v
-reload	.\Includes\Sqli.class.php	/^    protected $reload     = false;             \/\/是否重新载入$/;"	v
-reload	.\Includes\Sqli.class.php	/^    public function cache_all($sql, $reload = false, $limit = null) {$/;"	v
-reload	.\Includes\Sqli.class.php	/^    public function cache_one($sql, $reload = false) {$/;"	v
-reload	.\Includes\Sqli.class.php	/^    public function cache_row($sql, $reload = false) {$/;"	v
-res	.\Includes\Sqli.class.php	/^                $res    = $this->$method($sql); \/\/先从缓存中取数据，如果缓存中没数据，则从数据库中取数据$/;"	v
-res	.\Includes\Sqli.class.php	/^            $res        = $this->cache->get($cache_file);$/;"	v
-result	.\Includes\Mysql.class.php	/^        $result = $this->conn->query($sql);$/;"	v
-result	.\Includes\Mysql.class.php	/^        $result = $this->query($sql);$/;"	v
-result	.\Includes\ԭ��.Mysqli.class.php	/^        $result = $this->query( $sql );$/;"	v
-result	.\index.php	/^$result = $show->query($sql);$/;"	v
-row	.\Includes\Sqli.class.php	/^        $row              = $this->fetch();$/;"	v
-row	.\Includes\Sqli.class.php	/^        $row = $this->fetch();$/;"	v
-row	.\Includes\ԭ��.Mysqli.class.php	/^        $row = mysql_fetch_assoc( $str );$/;"	v
-row	.\Includes\ԭ��.Mysqli.class.php	/^        while( $row = mysql_fetch_assoc( $result ) )$/;"	v
-rs	.\Includes\Sqli.class.php	/^        $this->rs    = $this->mysqli->query($sql);$/;"	v
-rs	.\Includes\Sqli.class.php	/^    protected $rs;                                      \/\/结果集$/;"	v
-s_fields	.\Includes\Sqli.class.php	/^            $s_fields = "(".implode(",",$fields).")";$/;"	v
-s_values	.\Includes\Sqli.class.php	/^            $s_values  = "('".implode("','",$values)."')";$/;"	v
-s_values	.\Includes\Sqli.class.php	/^            $s_values = "('".implode("','",$values)."')";$/;"	v
-select_db	.\Includes\ԭ��.Mysqli.class.php	/^    protected function select_db( $db )$/;"	f
-show	.\index.php	/^$show   = new Index_Mod();$/;"	v
-size	.\Includes\Log.class.php	/^        $size = filesize($log);$/;"	v
-sql	.\Includes\Mysql.class.php	/^            $sql = 'update '.$table.' set ';$/;"	v
-sql	.\Includes\Mysql.class.php	/^            $sql = rtrim($sql, ',');$/;"	v
-sql	.\Includes\Mysql.class.php	/^        $sql = 'insert into '.$table.'('.implode('.', array_keys($arr)).')';$/;"	v
-sql	.\Includes\Sqli.class.php	/^            $sql      = "REPLACE INTO$/;"	v
-sql	.\Includes\Sqli.class.php	/^            $sql = "INSERT INTO$/;"	v
-sql	.\Includes\Sqli.class.php	/^            $sql = "UPDATE ".$tbl_name." SET ".$data." WHERE ".$condition;$/;"	v
-sql	.\Includes\Sqli.class.php	/^        $sql          = $this->get_query_sql($sql, 1);$/;"	v
-sql	.\Includes\Sqli.class.php	/^        $sql         = $this->get_query_sql($sql, $limit);$/;"	v
-sql	.\Includes\Sqli.class.php	/^        $sql    = $this->get_query_sql($sql, $limit);$/;"	v
-sql	.\Includes\Sqli.class.php	/^    public    $sql;                                          \/\/sql语句$/;"	v
-sql	.\Includes\ԭ��.Mysqli.class.php	/^            $sql = 'update ' . $table . ' set ';$/;"	v
-sql	.\Includes\ԭ��.Mysqli.class.php	/^            $sql = rtrim( $sql, ',' );$/;"	v
-sql	.\Includes\ԭ��.Mysqli.class.php	/^        $sql = 'insert into ' . $table . " (" . implode( ',', array_keys( $arr ) ) . ")";$/;"	v
-sql	.\Includes\ԭ��.Mysqli.class.php	/^        $sql = 'set names ' . $char;$/;"	v
-sql	.\Includes\ԭ��.Mysqli.class.php	/^        $sql = 'use ' . $db;$/;"	v
-sql	.\index.php	/^$sql    = 'select * from cat';$/;"	v
-str	.\Includes\ԭ��.Mysqli.class.php	/^        $str = $this->conn->query( $sql );$/;"	v
-str	.\Includes\ԭ��.Mysqli.class.php	/^        $str = $this->query( $sql );$/;"	v
-str	.\index.php	/^\/\/ $str = new  SimpleXMLElement ( ROOT.'config\/conf.xml' ,  NULL ,  TRUE );$/;"	v
-table	.\Models\Index_Mod.php	/^    public $table = 'cat';$/;"	v
-tagLib	.\Includes\Templates.class.php	/^    $tagLib = json_decode( file_get_contents( ROOT . 'config\/conf.json' ), true );$/;"	v
-time	.\Includes\Log.class.php	/^      $time = date("Y:m:d H:i:s", time());$/;"	v
-tpl	.\Includes\Parser.class.php	/^          $this->tpl = preg_replace( $else, "<?php }else{ ?>", $this->tpl );$/;"	v
-tpl	.\Includes\Parser.class.php	/^          $this->tpl = preg_replace( $elseIf, "<?php }elseif(\\$this->values['$1']){ ?>", $this->tpl );$/;"	v
-tpl	.\Includes\Parser.class.php	/^        $this->tpl = preg_replace( $endIf, "<?php } ?>", $this->tpl );$/;"	v
-tpl	.\Includes\Parser.class.php	/^        $this->tpl = preg_replace( $if, "<?php if(\\$this->values['$1']){ ?>", $this->tpl );$/;"	v
-tpl	.\Includes\Parser.class.php	/^        $this->tpl = preg_replace( $parVar, "<?php echo \\$$1; ?>", $this->tpl );$/;"	v
-tpl	.\Includes\Parser.class.php	/^      $this->tpl = preg_replace( $conStr, "<?php echo \\$this->proConfigs['$1']; ?>", $this->tpl );$/;"	v
-tpl	.\Includes\Parser.class.php	/^      $this->tpl = preg_replace( $endForeach, "<?php } ?>", $this->tpl );$/;"	v
-tpl	.\Includes\Parser.class.php	/^      $this->tpl = preg_replace( $foreach, "<?php foreach(\\$this->values['$1'] as \\$$2 => \\$$3){ ?>", $this->tpl );$/;"	v
-tpl	.\Includes\Parser.class.php	/^      $this->tpl = preg_replace( $include, "<?php include '$2'; ?>", $this->tpl );$/;"	v
-tpl	.\Includes\Parser.class.php	/^      $this->tpl = preg_replace( $pCom, "<?php \/* $1 *\/ ?>", $this->tpl );$/;"	v
-tpl	.\Includes\Parser.class.php	/^      $this->tpl = preg_replace( $pStr, "<?php echo \\$this->values['$1']; ?>", $this->tpl );$/;"	v
-tpl	.\Includes\Parser.class.php	/^  private $tpl = null;$/;"	v
-tplFile	.\Includes\Templates.class.php	/^    $tplFile = TPL . $file;$/;"	v
-tplFile	.\Includes\Templates.class.php	/^    if( !file_exists( $tplFile = TPL . $file ) )$/;"	v
-val	.\Includes\Sqli.class.php	/^                    $val = $val;$/;"	v
-values	.\Includes\Templates.class.php	/^  private $values = array();$/;"	v
-write	.\Includes\Log.class.php	/^    public static function write($cont){$/;"	f
+ADMIN	D:\www\admin\admin\index.php	/^define('ADMIN', __DIR__.'\/');$/;"	define	line:2
+pageCon	D:\www\admin\admin\index.php	/^$pageCon = Admin_Con::getIns();$/;"	variable	line:6
+WebName	D:\www\admin\config\conf.json	/^  "WebName":"Geo网站",$/;"	function	line:2
+UserName	D:\www\admin\config\conf.json	/^  "UserName":"Geoffrey"$/;"	function	line:3
+host	D:\www\admin\config\db.json	/^	"host"  : "localhost",$/;"	function	line:2
+user	D:\www\admin\config\db.json	/^	"user"  : "root",$/;"	function	line:3
+pswd	D:\www\admin\config\db.json	/^	"pswd"  : "123",$/;"	function	line:4
+dbname	D:\www\admin\config\db.json	/^	"dbname": "video",$/;"	function	line:5
+port	D:\www\admin\config\db.json	/^    "port"  : "3333",$/;"	function	line:6
+char	D:\www\admin\config\db.json	/^	"char"  : "UTF8"$/;"	function	line:7
+Admin_Con	D:\www\admin\Controllers\Admin_Con.php	/^class Admin_Con extends Controller{$/;"	class	line:3
+Index_Con	D:\www\admin\Controllers\Index_Con.php	/^    class Index_Con extends Controller$/;"	class	line:3
+rs	D:\www\admin\Controllers\Index_Con.php	/^        protected $rs = array();$/;"	variable	line:5
+rs	D:\www\admin\Controllers\Index_Con.php	/^        protected $rs = array();$/;"	variable	line:5
+action	D:\www\admin\Controllers\Index_Con.php	/^            public function action(){$/;"	function	line:7
+db	D:\www\admin\Controllers\Index_Con.php	/^                $db = new Index_Mod();$/;"	variable	line:8
+rs	D:\www\admin\Controllers\Index_Con.php	/^                $this->rs = $db->pageLoad();$/;"	variable	line:9
+show	D:\www\admin\Controllers\Index_Con.php	/^            \/\/ public function show(){$/;"	function	line:14
+name	D:\www\admin\Controllers\Index_Con.php	/^            \/\/     $name = get_called_class();$/;"	variable	line:15
+cat	D:\www\admin\Controllers\Index_Con.php	/^            \/\/     $this->cat = substr($name,0,strpos($name, '_Con'));$/;"	variable	line:16
+Conf	D:\www\admin\Includes\Conf.class.php	/^class Conf$/;"	class	line:14
+ins	D:\www\admin\Includes\Conf.class.php	/^    protected static $ins = null;$/;"	variable	line:16
+ins	D:\www\admin\Includes\Conf.class.php	/^    protected static $ins = null;$/;"	variable	line:16
+data	D:\www\admin\Includes\Conf.class.php	/^    protected $data       = array();$/;"	variable	line:17
+data	D:\www\admin\Includes\Conf.class.php	/^    protected $data       = array();$/;"	variable	line:17
+__construct	D:\www\admin\Includes\Conf.class.php	/^    final protected function __construct()$/;"	function	line:18
+data	D:\www\admin\Includes\Conf.class.php	/^        $this->data = new  SimpleXMLElement ( ROOT.'config\/conf.xml' ,  NULL ,  TRUE );$/;"	variable	line:23
+__clone	D:\www\admin\Includes\Conf.class.php	/^    final protected function __clone()$/;"	function	line:26
+getIns	D:\www\admin\Includes\Conf.class.php	/^    public static function getIns()$/;"	function	line:30
+__get	D:\www\admin\Includes\Conf.class.php	/^    public function __get( $key )$/;"	function	line:44
+__set	D:\www\admin\Includes\Conf.class.php	/^    public function __set( $key, $value )$/;"	function	line:57
+conf	D:\www\admin\Includes\Conf.class.php	/^   $conf = conf::getIns();$/;"	variable	line:64
+Controller	D:\www\admin\Includes\Controller.class.php	/^class Controller$/;"	class	line:3
+dataList	D:\www\admin\Includes\Controller.class.php	/^    static public $dataList = array();$/;"	variable	line:5
+dataList	D:\www\admin\Includes\Controller.class.php	/^    static public $dataList = array();$/;"	variable	line:5
+ins	D:\www\admin\Includes\Controller.class.php	/^    static protected $ins  = null;$/;"	variable	line:6
+ins	D:\www\admin\Includes\Controller.class.php	/^    static protected $ins  = null;$/;"	variable	line:6
+con	D:\www\admin\Includes\Controller.class.php	/^    public $con  = null;$/;"	variable	line:7
+con	D:\www\admin\Includes\Controller.class.php	/^    public $con  = null;$/;"	variable	line:7
+name	D:\www\admin\Includes\Controller.class.php	/^    static public $name;$/;"	variable	line:8
+cat	D:\www\admin\Includes\Controller.class.php	/^    public $cat;$/;"	variable	line:9
+__construct	D:\www\admin\Includes\Controller.class.php	/^    private function __construct()$/;"	function	line:14
+con	D:\www\admin\Includes\Controller.class.php	/^        $this->con = new Templates();$/;"	variable	line:16
+getIns	D:\www\admin\Includes\Controller.class.php	/^    public static function getIns(){$/;"	function	line:19
+className	D:\www\admin\Includes\Controller.class.php	/^            $className = get_called_class();$/;"	variable	line:21
+arrList	D:\www\admin\Includes\Controller.class.php	/^    protected static function arrList($data){$/;"	function	line:27
+key	D:\www\admin\Includes\Controller.class.php	/^            foreach ($data as $key => $value) {$/;"	variable	line:29
+assign	D:\www\admin\Includes\Controller.class.php	/^    public function assign($data){$/;"	function	line:37
+dataArr	D:\www\admin\Includes\Controller.class.php	/^        $dataArr = self::$dataList;$/;"	variable	line:39
+dataList	D:\www\admin\Includes\Controller.class.php	/^        \/\/ $this->dataList = $data;$/;"	variable	line:41
+k	D:\www\admin\Includes\Controller.class.php	/^        \/\/ foreach ($this->dataList as $k => $v) {$/;"	variable	line:42
+show	D:\www\admin\Includes\Controller.class.php	/^    public function show(){$/;"	function	line:48
+name	D:\www\admin\Includes\Controller.class.php	/^        $name = get_called_class();$/;"	variable	line:49
+cat	D:\www\admin\Includes\Controller.class.php	/^            $this->cat = $_GET['cat'];$/;"	variable	line:51
+cat	D:\www\admin\Includes\Controller.class.php	/^            $this->cat = substr($name,0,strpos($name, '_Con'));$/;"	variable	line:53
+Db	D:\www\admin\Includes\Db.class.php	/^abstract class Db$/;"	class	line:15
+connect	D:\www\admin\Includes\Db.class.php	/^    public abstract function connect( $h, $u, $p, $d, $c );$/;"	function	line:25
+query	D:\www\admin\Includes\Db.class.php	/^    public abstract function query( $sql );$/;"	function	line:32
+getAll	D:\www\admin\Includes\Db.class.php	/^    public abstract function getAll( $sql );$/;"	function	line:39
+getRow	D:\www\admin\Includes\Db.class.php	/^    public abstract function getRow( $sql );$/;"	function	line:46
+getOne	D:\www\admin\Includes\Db.class.php	/^    public abstract function getOne( $sql );$/;"	function	line:53
+autoExcute	D:\www\admin\Includes\Db.class.php	/^    public abstract function autoExcute( $table, $data, $act = 'insert', $where = '' );$/;"	function	line:66
+act	D:\www\admin\Includes\Db.class.php	/^    public abstract function autoExcute( $table, $data, $act = 'insert', $where = '' );$/;"	variable	line:66
+_AddSlashes	D:\www\admin\Includes\Lib_base.php	/^  function _AddSlashes($arr){$/;"	function	line:5
+key	D:\www\admin\Includes\Lib_base.php	/^      foreach ($arr as $key => $value) {$/;"	variable	line:6
+Log	D:\www\admin\Includes\Log.class.php	/^class Log{$/;"	class	line:3
+write	D:\www\admin\Includes\Log.class.php	/^    public static function write($cont){$/;"	function	line:8
+time	D:\www\admin\Includes\Log.class.php	/^      $time = date("Y:m:d H:i:s", time());$/;"	variable	line:10
+cont	D:\www\admin\Includes\Log.class.php	/^      $cont = $time .' >>> '. $cont ."\\r\\n";$/;"	variable	line:11
+log	D:\www\admin\Includes\Log.class.php	/^      $log  = self::rSize();$/;"	variable	line:13
+fh	D:\www\admin\Includes\Log.class.php	/^      $fh   = fopen($log,'ab');$/;"	variable	line:14
+bak	D:\www\admin\Includes\Log.class.php	/^    public static function bak(){$/;"	function	line:21
+log	D:\www\admin\Includes\Log.class.php	/^      $log = ROOT . 'data\/log\/' . self::LOGFILE ;$/;"	variable	line:22
+bak	D:\www\admin\Includes\Log.class.php	/^      $bak = ROOT . 'data\/log\/'.date('ymdHis').'.bak';$/;"	variable	line:23
+rSize	D:\www\admin\Includes\Log.class.php	/^    public static function rSize(){$/;"	function	line:28
+log	D:\www\admin\Includes\Log.class.php	/^      $log = ROOT . 'data\/log\/' . self::LOGFILE ;$/;"	variable	line:29
+size	D:\www\admin\Includes\Log.class.php	/^        $size = filesize($log);$/;"	variable	line:36
+Parser	D:\www\admin\Includes\Parser.class.php	/^class Parser$/;"	class	line:21
+tpl	D:\www\admin\Includes\Parser.class.php	/^  private $tpl     = null;$/;"	variable	line:23
+tpl	D:\www\admin\Includes\Parser.class.php	/^  private $tpl     = null;$/;"	variable	line:23
+proVars	D:\www\admin\Includes\Parser.class.php	/^  private $proVars = array();$/;"	variable	line:24
+proVars	D:\www\admin\Includes\Parser.class.php	/^  private $proVars = array();$/;"	variable	line:24
+parStr	D:\www\admin\Includes\Parser.class.php	/^  private $parStr =array($/;"	variable	line:25
+parStr	D:\www\admin\Includes\Parser.class.php	/^  private $parStr =array($/;"	variable	line:25
+__construct	D:\www\admin\Includes\Parser.class.php	/^  function __construct( $tplFile )$/;"	function	line:34
+parVar	D:\www\admin\Includes\Parser.class.php	/^  private function parVar()$/;"	function	line:43
+pStr	D:\www\admin\Includes\Parser.class.php	/^    $pStr = '\/\\{\\s*\\$([\\w]+)\\s*\\}\/';$/;"	variable	line:45
+tpl	D:\www\admin\Includes\Parser.class.php	/^      $this->tpl = preg_replace( $pStr, "<?php echo \\$this->values['$1']; ?>", $this->tpl );$/;"	variable	line:49
+parIf	D:\www\admin\Includes\Parser.class.php	/^  private function parIf()$/;"	function	line:54
+if	D:\www\admin\Includes\Parser.class.php	/^    $if     = '\/\\{\\s*if\\s*\\$([\\w]+)\\s*\\}\/';$/;"	variable	line:56
+endIf	D:\www\admin\Includes\Parser.class.php	/^    $endIf  = '\/\\{\\s*\\\/if\\s*\\}\/';$/;"	variable	line:58
+else	D:\www\admin\Includes\Parser.class.php	/^    $else   = '\/\\{\\s*else\\s*\\}\/';$/;"	variable	line:60
+elseIf	D:\www\admin\Includes\Parser.class.php	/^    $elseIf = '\/\\{\\s*else\\s*if\\s+\\$([\\w]+)\\s*\\}\/';$/;"	variable	line:62
+tpl	D:\www\admin\Includes\Parser.class.php	/^        $this->tpl = preg_replace( $if, "<?php if(\\$this->values['$1']){ ?>", $this->tpl );$/;"	variable	line:77
+tpl	D:\www\admin\Includes\Parser.class.php	/^        $this->tpl = preg_replace( $endIf, "<?php } ?>", $this->tpl );$/;"	variable	line:78
+tpl	D:\www\admin\Includes\Parser.class.php	/^          $this->tpl = preg_replace( $else, "<?php }else{ ?>", $this->tpl );$/;"	variable	line:86
+tpl	D:\www\admin\Includes\Parser.class.php	/^          $this->tpl = preg_replace( $elseIf, "<?php }elseif(\\$this->values['$1']){ ?>", $this->tpl );$/;"	variable	line:95
+parCommon	D:\www\admin\Includes\Parser.class.php	/^  private function parCommon()$/;"	function	line:106
+pCom	D:\www\admin\Includes\Parser.class.php	/^    $pCom = '\/\\{#(.*)#\\}\/';$/;"	variable	line:108
+tpl	D:\www\admin\Includes\Parser.class.php	/^      $this->tpl = preg_replace( $pCom, "<?php \/* $1 *\/ ?>", $this->tpl );$/;"	variable	line:111
+parForeach	D:\www\admin\Includes\Parser.class.php	/^  private function parForeach()$/;"	function	line:116
+foreach	D:\www\admin\Includes\Parser.class.php	/^    $foreach    = '\/\\{\\s*foreach\\s+\\$([\\w]+)\\s+\\(\\s*([\\w]+),\\s*([\\w]+)\\s*\\)\\s*\\}\/';$/;"	variable	line:118
+endForeach	D:\www\admin\Includes\Parser.class.php	/^    $endForeach = '\/\\{\\s*\\\/foreach\\s*\\}\/';$/;"	variable	line:119
+parVar	D:\www\admin\Includes\Parser.class.php	/^    $parVar     = '\/\\{@([\\w]+)\\s*\\}\/';$/;"	variable	line:120
+tpl	D:\www\admin\Includes\Parser.class.php	/^      $this->tpl = preg_replace( $foreach, "<?php foreach(\\$this->values['$1'] as \\$$2 => \\$$3){ ?>", $this->tpl );$/;"	variable	line:127
+tpl	D:\www\admin\Includes\Parser.class.php	/^      $this->tpl = preg_replace( $endForeach, "<?php } ?>", $this->tpl );$/;"	variable	line:128
+tpl	D:\www\admin\Includes\Parser.class.php	/^        $this->tpl = preg_replace( $parVar, "<?php echo \\$$1; ?>", $this->tpl );$/;"	variable	line:134
+parInclude	D:\www\admin\Includes\Parser.class.php	/^  private function parInclude()$/;"	function	line:140
+include	D:\www\admin\Includes\Parser.class.php	/^    $include = '\/\\{include\\s+file\\s*=\\s*(\\"|\\')([\\w\\.\\-\\\/]+)(\\"|\\')\\}\/';$/;"	variable	line:142
+tpl	D:\www\admin\Includes\Parser.class.php	/^      $this->tpl = preg_replace( $include, "<?php include '$2'; ?>", $this->tpl );$/;"	variable	line:150
+parConfig	D:\www\admin\Includes\Parser.class.php	/^  private function parConfig()$/;"	function	line:158
+conStr	D:\www\admin\Includes\Parser.class.php	/^    $conStr = '\/<!--\\{\\s*([\\w]+)\\s*\\}-->\/';$/;"	variable	line:161
+tpl	D:\www\admin\Includes\Parser.class.php	/^      $this->tpl = preg_replace( $conStr, "<?php echo \\$this->proConfigs['$1']; ?>", $this->tpl );$/;"	variable	line:164
+parAction	D:\www\admin\Includes\Parser.class.php	/^  private function parAction(){$/;"	function	line:168
+compile	D:\www\admin\Includes\Parser.class.php	/^  public function compile( $parFile )$/;"	function	line:183
+Sqli	D:\www\admin\Includes\Sqli.class.php	/^class Sqli {$/;"	class	line:3
+mysqli	D:\www\admin\Includes\Sqli.class.php	/^    protected $mysqli;                              \/\/mysqli实例对象$/;"	variable	line:4
+conf	D:\www\admin\Includes\Sqli.class.php	/^    protected $conf       = array();                  \/\/config配置信息$/;"	variable	line:5
+conf	D:\www\admin\Includes\Sqli.class.php	/^    protected $conf       = array();                  \/\/config配置信息$/;"	variable	line:5
+sql	D:\www\admin\Includes\Sqli.class.php	/^    public    $sql;                                          \/\/sql语句$/;"	variable	line:6
+rs	D:\www\admin\Includes\Sqli.class.php	/^    protected $rs;                                      \/\/结果集$/;"	variable	line:7
+query_num	D:\www\admin\Includes\Sqli.class.php	/^    protected $query_num  = 0;            \/\/执行次数$/;"	variable	line:8
+query_num	D:\www\admin\Includes\Sqli.class.php	/^    protected $query_num  = 0;            \/\/执行次数$/;"	variable	line:8
+fetch_mode	D:\www\admin\Includes\Sqli.class.php	/^    protected $fetch_mode = MYSQLI_ASSOC;     \/\/获取模式$/;"	variable	line:9
+fetch_mode	D:\www\admin\Includes\Sqli.class.php	/^    protected $fetch_mode = MYSQLI_ASSOC;     \/\/获取模式$/;"	variable	line:9
+cache	D:\www\admin\Includes\Sqli.class.php	/^    protected $cache;                               \/\/缓存类对象$/;"	variable	line:10
+reload	D:\www\admin\Includes\Sqli.class.php	/^    protected $reload     = false;             \/\/是否重新载入$/;"	variable	line:11
+reload	D:\www\admin\Includes\Sqli.class.php	/^    protected $reload     = false;             \/\/是否重新载入$/;"	variable	line:11
+cache_mark	D:\www\admin\Includes\Sqli.class.php	/^    protected $cache_mark = true;        \/\/缓存标记$/;"	variable	line:12
+cache_mark	D:\www\admin\Includes\Sqli.class.php	/^    protected $cache_mark = true;        \/\/缓存标记$/;"	variable	line:12
+__construct	D:\www\admin\Includes\Sqli.class.php	/^    public function  __construct() {$/;"	function	line:15
+conf	D:\www\admin\Includes\Sqli.class.php	/^            $this->conf   = json_decode(file_get_contents(ROOT.'config'.DS.'db.json'),true);$/;"	variable	line:16
+mysqli	D:\www\admin\Includes\Sqli.class.php	/^            $this->mysqli = new mysqli($this->conf['host'].':'.$this->conf['port'], $this->conf['user'], $this->conf['pswd'], $this->conf['dbname']);$/;"	variable	line:18
+mysqli	D:\www\admin\Includes\Sqli.class.php	/^            $this->mysqli = false;$/;"	variable	line:20
+cache_obj	D:\www\admin\Includes\Sqli.class.php	/^    public function cache_obj($cache) {$/;"	function	line:28
+cache	D:\www\admin\Includes\Sqli.class.php	/^        $this->cache    = $cache;$/;"	variable	line:29
+__destruct	D:\www\admin\Includes\Sqli.class.php	/^    public function  __destruct() {$/;"	function	line:33
+free	D:\www\admin\Includes\Sqli.class.php	/^    protected function free() {$/;"	function	line:39
+close	D:\www\admin\Includes\Sqli.class.php	/^    protected function close() {$/;"	function	line:44
+fetch	D:\www\admin\Includes\Sqli.class.php	/^    protected function fetch() {$/;"	function	line:49
+get_query_sql	D:\www\admin\Includes\Sqli.class.php	/^    protected function get_query_sql($sql, $limit = null) {$/;"	function	line:54
+limit	D:\www\admin\Includes\Sqli.class.php	/^    protected function get_query_sql($sql, $limit = null) {$/;"	variable	line:54
+get_cache	D:\www\admin\Includes\Sqli.class.php	/^    protected function get_cache($sql,$method) {$/;"	function	line:62
+cache_file	D:\www\admin\Includes\Sqli.class.php	/^            $cache_file = md5($sql.$method);$/;"	variable	line:63
+res	D:\www\admin\Includes\Sqli.class.php	/^            $res        = $this->cache->get($cache_file);$/;"	variable	line:64
+res	D:\www\admin\Includes\Sqli.class.php	/^                $res    = $this->$method($sql); \/\/先从缓存中取数据，如果缓存中没数据，则从数据库中取数据$/;"	variable	line:66
+query_num	D:\www\admin\Includes\Sqli.class.php	/^    public function query_num() {$/;"	function	line:75
+query	D:\www\admin\Includes\Sqli.class.php	/^    public function query($sql, $limit = null) {$/;"	function	line:80
+limit	D:\www\admin\Includes\Sqli.class.php	/^    public function query($sql, $limit = null) {$/;"	variable	line:80
+sql	D:\www\admin\Includes\Sqli.class.php	/^        $sql         = $this->get_query_sql($sql, $limit);$/;"	variable	line:81
+sql	D:\www\admin\Includes\Sqli.class.php	/^        $this->sql = $sql;$/;"	variable	line:82
+rs	D:\www\admin\Includes\Sqli.class.php	/^        $this->rs    = $this->mysqli->query($sql);$/;"	variable	line:83
+get_one	D:\www\admin\Includes\Sqli.class.php	/^    public function get_one($sql) {$/;"	function	line:95
+fetch_mode	D:\www\admin\Includes\Sqli.class.php	/^        $this->fetch_mode = MYSQLI_NUM;$/;"	variable	line:97
+row	D:\www\admin\Includes\Sqli.class.php	/^        $row              = $this->fetch();$/;"	variable	line:98
+cache_one	D:\www\admin\Includes\Sqli.class.php	/^    public function cache_one($sql, $reload = false) {$/;"	function	line:104
+reload	D:\www\admin\Includes\Sqli.class.php	/^    public function cache_one($sql, $reload = false) {$/;"	variable	line:104
+reload	D:\www\admin\Includes\Sqli.class.php	/^        $this->reload = $reload;$/;"	variable	line:105
+sql	D:\www\admin\Includes\Sqli.class.php	/^        $sql          = $this->get_query_sql($sql, 1);$/;"	variable	line:106
+get_row	D:\www\admin\Includes\Sqli.class.php	/^    public function get_row($sql, $fetch_mode = MYSQLI_ASSOC) {$/;"	function	line:111
+fetch_mode	D:\www\admin\Includes\Sqli.class.php	/^    public function get_row($sql, $fetch_mode = MYSQLI_ASSOC) {$/;"	variable	line:111
+fetch_mode	D:\www\admin\Includes\Sqli.class.php	/^        $this->fetch_mode = $fetch_mode;$/;"	variable	line:113
+row	D:\www\admin\Includes\Sqli.class.php	/^        $row              = $this->fetch();$/;"	variable	line:114
+cache_row	D:\www\admin\Includes\Sqli.class.php	/^    public function cache_row($sql, $reload = false) {$/;"	function	line:120
+reload	D:\www\admin\Includes\Sqli.class.php	/^    public function cache_row($sql, $reload = false) {$/;"	variable	line:120
+reload	D:\www\admin\Includes\Sqli.class.php	/^        $this->reload = $reload;$/;"	variable	line:121
+sql	D:\www\admin\Includes\Sqli.class.php	/^        $sql          = $this->get_query_sql($sql, 1);$/;"	variable	line:122
+get_all	D:\www\admin\Includes\Sqli.class.php	/^    public function get_all($sql, $limit = null, $fetch_mode = MYSQLI_ASSOC) {$/;"	function	line:127
+limit	D:\www\admin\Includes\Sqli.class.php	/^    public function get_all($sql, $limit = null, $fetch_mode = MYSQLI_ASSOC) {$/;"	variable	line:127
+all_rows	D:\www\admin\Includes\Sqli.class.php	/^        $all_rows         = array();$/;"	variable	line:129
+fetch_mode	D:\www\admin\Includes\Sqli.class.php	/^        $this->fetch_mode = $fetch_mode;$/;"	variable	line:130
+cache_all	D:\www\admin\Includes\Sqli.class.php	/^    public function cache_all($sql, $reload = false, $limit = null) {$/;"	function	line:139
+reload	D:\www\admin\Includes\Sqli.class.php	/^    public function cache_all($sql, $reload = false, $limit = null) {$/;"	variable	line:139
+reload	D:\www\admin\Includes\Sqli.class.php	/^        $this->reload = $reload;$/;"	variable	line:140
+sql	D:\www\admin\Includes\Sqli.class.php	/^        $sql          = $this->get_query_sql($sql, $limit);$/;"	variable	line:141
+affected_rows	D:\www\admin\Includes\Sqli.class.php	/^    public function affected_rows() {$/;"	function	line:146
+get_insert_db_sql	D:\www\admin\Includes\Sqli.class.php	/^    public function get_insert_db_sql($tbl_name,$info)$/;"	function	line:156
+i	D:\www\admin\Includes\Sqli.class.php	/^            $i = 0;$/;"	variable	line:161
+key	D:\www\admin\Includes\Sqli.class.php	/^            foreach($info as $key=>$val)$/;"	variable	line:162
+s_fields	D:\www\admin\Includes\Sqli.class.php	/^                $s_fields = "(".implode(",",$fields).")";$/;"	variable	line:168
+s_values	D:\www\admin\Includes\Sqli.class.php	/^                $s_values = "('".implode("','",$values)."')";$/;"	variable	line:169
+sql	D:\www\admin\Includes\Sqli.class.php	/^                $sql      = "INSERT INTO $tbl_name $s_fields VALUES $s_values";$/;"	variable	line:170
+get_replace_db_sql	D:\www\admin\Includes\Sqli.class.php	/^    public function get_replace_db_sql($tbl_name,$info)$/;"	function	line:186
+i	D:\www\admin\Includes\Sqli.class.php	/^            $i = 0;$/;"	variable	line:190
+key	D:\www\admin\Includes\Sqli.class.php	/^            foreach($info as $key=>$val)$/;"	variable	line:191
+s_fields	D:\www\admin\Includes\Sqli.class.php	/^            $s_fields = "(".implode(",",$fields).")";$/;"	variable	line:197
+s_values	D:\www\admin\Includes\Sqli.class.php	/^            $s_values = "('".implode("','",$values)."')";$/;"	variable	line:198
+sql	D:\www\admin\Includes\Sqli.class.php	/^            $sql      = "REPLACE INTO $tbl_name $s_fields VALUES $s_values";$/;"	variable	line:199
+get_update_db_sql	D:\www\admin\Includes\Sqli.class.php	/^    public function get_update_db_sql($tbl_name,$info,$condition)$/;"	function	line:215
+i	D:\www\admin\Includes\Sqli.class.php	/^        $i    = 0;$/;"	variable	line:217
+data	D:\www\admin\Includes\Sqli.class.php	/^        $data = '';$/;"	variable	line:218
+key	D:\www\admin\Includes\Sqli.class.php	/^            foreach( $info as $key=>$val )$/;"	variable	line:221
+val	D:\www\admin\Includes\Sqli.class.php	/^                    $val = $val;$/;"	variable	line:225
+data	D:\www\admin\Includes\Sqli.class.php	/^                        $data = $key."='".$val."'"; \/\/第一次：如，update 表名 set username='admin'$/;"	variable	line:228
+sql	D:\www\admin\Includes\Sqli.class.php	/^            $sql = "UPDATE ".$tbl_name." SET ".$data." WHERE ".$condition;$/;"	variable	line:237
+last_id	D:\www\admin\Includes\Sqli.class.php	/^    public function last_id() {$/;"	function	line:251
+real_get	D:\www\admin\Includes\Sqli.class.php	/^    public function real_get($sql, $fetch_mode = MYSQLI_ASSOC) {$/;"	function	line:256
+fetch_mode	D:\www\admin\Includes\Sqli.class.php	/^    public function real_get($sql, $fetch_mode = MYSQLI_ASSOC) {$/;"	variable	line:256
+fetch_mode	D:\www\admin\Includes\Sqli.class.php	/^        $this->fetch_mode = $fetch_mode;$/;"	variable	line:258
+row	D:\www\admin\Includes\Sqli.class.php	/^        $row              = $this->fetch();$/;"	variable	line:259
+Templates	D:\www\admin\Includes\Templates.class.php	/^class Templates$/;"	class	line:12
+values	D:\www\admin\Includes\Templates.class.php	/^  private $values     = array();$/;"	variable	line:14
+values	D:\www\admin\Includes\Templates.class.php	/^  private $values     = array();$/;"	variable	line:14
+proConfigs	D:\www\admin\Includes\Templates.class.php	/^  private $proConfigs = array();$/;"	variable	line:15
+proConfigs	D:\www\admin\Includes\Templates.class.php	/^  private $proConfigs = array();$/;"	variable	line:15
+__construct	D:\www\admin\Includes\Templates.class.php	/^  function __construct() $/;"	function	line:17
+tagLib	D:\www\admin\Includes\Templates.class.php	/^    $tagLib = json_decode( file_get_contents( ROOT . 'config\/conf.json' ), true );$/;"	variable	line:30
+k	D:\www\admin\Includes\Templates.class.php	/^    foreach( $tagLib as $k => $v )$/;"	variable	line:31
+__destruct	D:\www\admin\Includes\Templates.class.php	/^  function __destruct(){$/;"	function	line:37
+proConfigs	D:\www\admin\Includes\Templates.class.php	/^    $this->proConfigs = array();$/;"	variable	line:38
+assign	D:\www\admin\Includes\Templates.class.php	/^  public function assign( $key, $value )$/;"	function	line:41
+display	D:\www\admin\Includes\Templates.class.php	/^  public function display($file )$/;"	function	line:57
+tplFile	D:\www\admin\Includes\Templates.class.php	/^    if( !file_exists( $tplFile = TPL . $file ) )$/;"	variable	line:59
+parFile	D:\www\admin\Includes\Templates.class.php	/^    $parFile   = TPL_C . md5( $file ) . $file . '.php';$/;"	variable	line:65
+cacheFile	D:\www\admin\Includes\Templates.class.php	/^    $cacheFile = CACHE . md5( $file ) . $file . '.html';$/;"	variable	line:68
+parser	D:\www\admin\Includes\Templates.class.php	/^      $parser = new Parser( $tplFile );$/;"	variable	line:89
+obj	D:\www\admin\index.php	/^$obj = Index_Con::getIns();$/;"	variable	line:4
+DS	D:\www\admin\init.inc.php	/^define( 'DS', DIRECTORY_SEPARATOR );$/;"	define	line:9
+ROOT	D:\www\admin\init.inc.php	/^define( 'ROOT', __DIR__ . DS );$/;"	define	line:11
+TPL	D:\www\admin\init.inc.php	/^define( 'TPL', ROOT . 'templates' . DS );$/;"	define	line:14
+TPL_C	D:\www\admin\init.inc.php	/^define( 'TPL_C', ROOT . 'templates_c' . DS );$/;"	define	line:17
+CACHE	D:\www\admin\init.inc.php	/^define( 'CACHE', ROOT . 'cache' . DS );$/;"	define	line:20
+turnOnCache	D:\www\admin\init.inc.php	/^$turnOnCache = false;       \/\/true or false$/;"	variable	line:23
+IS_CACHE	D:\www\admin\init.inc.php	/^    define('IS_CACHE', false);$/;"	define	line:25
+IS_CACHE	D:\www\admin\init.inc.php	/^    define('IS_CACHE', $turnOnCache);$/;"	define	line:27
+autoload	D:\www\admin\init.inc.php	/^function autoload($name){$/;"	function	line:31
+className	D:\www\admin\init.inc.php	/^    $className = strtolower(substr($name,-3));$/;"	variable	line:32
+Index_Mod	D:\www\admin\Models\Index_Mod.php	/^class Index_Mod extends Sqli$/;"	class	line:6
+table	D:\www\admin\Models\Index_Mod.php	/^    private $table = 'cat';$/;"	variable	line:8
+table	D:\www\admin\Models\Index_Mod.php	/^    private $table = 'cat';$/;"	variable	line:8
+pageLoad	D:\www\admin\Models\Index_Mod.php	/^    public function pageLoad()$/;"	function	line:9
+sql	D:\www\admin\Models\Index_Mod.php	/^        $sql = "select catName, name from $this->table where parentId = 0";$/;"	variable	line:11
+rs	D:\www\admin\Models\Index_Mod.php	/^        $rs = $this->get_all($sql);$/;"	variable	line:12
+sourceLoad	D:\www\admin\Models\Index_Mod.php	/^    public function sourceLoad(){$/;"	function	line:16
+sql	D:\www\admin\Models\Index_Mod.php	/^        $sql = "select ";$/;"	variable	line:17
+html	D:\www\admin\styles\admin.css	/^html {$/;"	function	line:5
+@media screen and (min-width: 768px) and (max-width: 1080px)	D:\www\admin\styles\admin.css	/^@media screen and (min-width: 768px) and (max-width: 1080px) {$/;"	function	line:10
+html	D:\www\admin\styles\admin.css	/^  html {$/;"	function	line:12
+@media screen and (min-width: 420px) and (max-width: 768px)	D:\www\admin\styles\admin.css	/^@media screen and (min-width: 420px) and (max-width: 768px) {$/;"	function	line:14
+html	D:\www\admin\styles\admin.css	/^  html {$/;"	function	line:16
+@media screen and (max-width: 420px) and (min-width: 300px)	D:\www\admin\styles\admin.css	/^@media screen and (max-width: 420px) and (min-width: 300px) {$/;"	function	line:18
+html	D:\www\admin\styles\admin.css	/^  html {$/;"	function	line:20
+@media screen and (max-width: 300px)	D:\www\admin\styles\admin.css	/^@media screen and (max-width: 300px) {$/;"	function	line:22
+html	D:\www\admin\styles\admin.css	/^  html {$/;"	function	line:24
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre	D:\www\admin\styles\admin.css	/^body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre,$/;"	function	line:27
+form, fieldset, input, textarea, p, blockquote, th, td, button	D:\www\admin\styles\admin.css	/^form, fieldset, input, textarea, p, blockquote, th, td, button {$/;"	function	line:28
+table	D:\www\admin\styles\admin.css	/^table {$/;"	function	line:35
+fieldset, img	D:\www\admin\styles\admin.css	/^fieldset, img {$/;"	function	line:40
+address, caption, cite, code, dfn, em, strong, th, var	D:\www\admin\styles\admin.css	/^address, caption, cite, code, dfn, em, strong, th, var {$/;"	function	line:44
+ol, ul, li	D:\www\admin\styles\admin.css	/^ol, ul, li {$/;"	function	line:49
+caption, th	D:\www\admin\styles\admin.css	/^caption, th {$/;"	function	line:53
+h1	D:\www\admin\styles\admin.css	/^h1 {$/;"	function	line:57
+h2	D:\www\admin\styles\admin.css	/^h2 {$/;"	function	line:62
+h3	D:\www\admin\styles\admin.css	/^h3 {$/;"	function	line:67
+h4, h5, h6	D:\www\admin\styles\admin.css	/^h4, h5, h6 {$/;"	function	line:72
+:before, :after	D:\www\admin\styles\admin.css	/^:before, :after {$/;"	function	line:77
+a, a:hover, a:visited	D:\www\admin\styles\admin.css	/^a, a:hover, a:visited {$/;"	function	line:81
+abbr, acronym	D:\www\admin\styles\admin.css	/^abbr, acronym {$/;"	function	line:86
+body	D:\www\admin\styles\admin.css	/^body {$/;"	function	line:90
+header nav	D:\www\admin\styles\admin.css	/^header nav {$/;"	function	line:96
+header nav div.nav-bar	D:\www\admin\styles\admin.css	/^  header nav div.nav-bar {$/;"	function	line:102
+header nav div.nav-item	D:\www\admin\styles\admin.css	/^  header nav div.nav-item {$/;"	function	line:110
+header nav div.nav-item li	D:\www\admin\styles\admin.css	/^    header nav div.nav-item li {$/;"	function	line:115
+.nav-item a	D:\www\admin\styles\admin.css	/^  .nav-item a {$/;"	function	line:120
+#left, #right	D:\www\admin\styles\admin.css	/^#left, #right {$/;"	function	line:133
+#left	D:\www\admin\styles\admin.css	/^#left {$/;"	function	line:141
+#right	D:\www\admin\styles\admin.css	/^#right {$/;"	function	line:147
+#right h2	D:\www\admin\styles\admin.css	/^  #right h2 {$/;"	function	line:152
+body	D:\www\admin\styles\admin.scss	/^body {$/;"	function	line:3
+header nav	D:\www\admin\styles\admin.scss	/^header nav{$/;"	function	line:9
+div.nav-bar	D:\www\admin\styles\admin.scss	/^	div.nav-bar{$/;"	function	line:15
+div.nav-item	D:\www\admin\styles\admin.scss	/^	div.nav-item{$/;"	function	line:24
+& li	D:\www\admin\styles\admin.scss	/^		& li{$/;"	function	line:28
+@at-root.nav-item a	D:\www\admin\styles\admin.scss	/^	@at-root.nav-item a{$/;"	function	line:37
+#left,#right	D:\www\admin\styles\admin.scss	/^#left,#right{$/;"	function	line:50
+#left	D:\www\admin\styles\admin.scss	/^#left{$/;"	function	line:58
+#right	D:\www\admin\styles\admin.scss	/^#right{$/;"	function	line:64
+& h2	D:\www\admin\styles\admin.scss	/^	& h2{$/;"	function	line:68
+html	D:\www\admin\styles\cates.css	/^html {$/;"	function	line:5
+@media screen and (min-width: 768px) and (max-width: 1080px)	D:\www\admin\styles\cates.css	/^@media screen and (min-width: 768px) and (max-width: 1080px) {$/;"	function	line:11
+html	D:\www\admin\styles\cates.css	/^  html {$/;"	function	line:13
+@media screen and (min-width: 420px) and (max-width: 768px)	D:\www\admin\styles\cates.css	/^@media screen and (min-width: 420px) and (max-width: 768px) {$/;"	function	line:17
+html	D:\www\admin\styles\cates.css	/^  html {$/;"	function	line:19
+@media screen and (max-width: 420px) and (min-width: 300px)	D:\www\admin\styles\cates.css	/^@media screen and (max-width: 420px) and (min-width: 300px) {$/;"	function	line:23
+html	D:\www\admin\styles\cates.css	/^  html {$/;"	function	line:25
+@media screen and (max-width: 300px)	D:\www\admin\styles\cates.css	/^@media screen and (max-width: 300px) {$/;"	function	line:29
+html	D:\www\admin\styles\cates.css	/^  html {$/;"	function	line:31
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre	D:\www\admin\styles\cates.css	/^body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre,$/;"	function	line:36
+form, fieldset, input, textarea, p, blockquote, th, td, button	D:\www\admin\styles\cates.css	/^form, fieldset, input, textarea, p, blockquote, th, td, button {$/;"	function	line:37
+table	D:\www\admin\styles\cates.css	/^table {$/;"	function	line:45
+fieldset, img	D:\www\admin\styles\cates.css	/^fieldset, img {$/;"	function	line:51
+address, caption, cite, code, dfn, em, strong, th, var	D:\www\admin\styles\cates.css	/^address, caption, cite, code, dfn, em, strong, th, var {$/;"	function	line:56
+ol, ul, li	D:\www\admin\styles\cates.css	/^ol, ul, li {$/;"	function	line:62
+caption, th	D:\www\admin\styles\cates.css	/^caption, th {$/;"	function	line:67
+h1	D:\www\admin\styles\cates.css	/^h1 {$/;"	function	line:72
+h2	D:\www\admin\styles\cates.css	/^h2 {$/;"	function	line:78
+h3	D:\www\admin\styles\cates.css	/^h3 {$/;"	function	line:84
+h4, h5, h6	D:\www\admin\styles\cates.css	/^h4, h5, h6 {$/;"	function	line:90
+:before, :after	D:\www\admin\styles\cates.css	/^:before, :after {$/;"	function	line:96
+a, a:hover, a:visited	D:\www\admin\styles\cates.css	/^a, a:hover, a:visited {$/;"	function	line:101
+abbr, acronym	D:\www\admin\styles\cates.css	/^abbr, acronym {$/;"	function	line:107
+body	D:\www\admin\styles\cates.css	/^body {$/;"	function	line:112
+header nav	D:\www\admin\styles\cates.css	/^header nav {$/;"	function	line:119
+header nav div.nav-bar	D:\www\admin\styles\cates.css	/^header nav div.nav-bar {$/;"	function	line:125
+header nav div.nav-item	D:\www\admin\styles\cates.css	/^header nav div.nav-item {$/;"	function	line:134
+header nav div.nav-item ul	D:\www\admin\styles\cates.css	/^header nav div.nav-item ul {$/;"	function	line:140
+header nav div.nav-item ul > li	D:\www\admin\styles\cates.css	/^header nav div.nav-item ul > li {$/;"	function	line:147
+.nav-item a	D:\www\admin\styles\cates.css	/^.nav-item a {$/;"	function	line:154
+body	D:\www\admin\styles\cates.scss	/^body {$/;"	function	line:2
+header nav	D:\www\admin\styles\cates.scss	/^header nav{$/;"	function	line:7
+div.nav-bar	D:\www\admin\styles\cates.scss	/^	div.nav-bar{$/;"	function	line:13
+div.nav-item	D:\www\admin\styles\cates.scss	/^	div.nav-item{$/;"	function	line:22
+& ul	D:\www\admin\styles\cates.scss	/^		& ul{$/;"	function	line:26
+&>li	D:\www\admin\styles\cates.scss	/^            &>li{$/;"	function	line:28
+@at-root.nav-item a	D:\www\admin\styles\cates.scss	/^	@at-root.nav-item a{$/;"	function	line:38
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre	D:\www\admin\styles\reset.css	/^body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre,$/;"	function	line:2
+form, fieldset, input, textarea, p, blockquote, th, td, button	D:\www\admin\styles\reset.css	/^form, fieldset, input, textarea, p, blockquote, th, td, button {$/;"	function	line:3
+table	D:\www\admin\styles\reset.css	/^table {$/;"	function	line:9
+fieldset, img	D:\www\admin\styles\reset.css	/^fieldset, img {$/;"	function	line:14
+address, caption, cite, code, dfn, em, strong, th, var	D:\www\admin\styles\reset.css	/^address, caption, cite, code, dfn, em, strong, th, var {$/;"	function	line:18
+ol, ul, li	D:\www\admin\styles\reset.css	/^ol, ul, li {$/;"	function	line:23
+caption, th	D:\www\admin\styles\reset.css	/^caption, th {$/;"	function	line:27
+h1	D:\www\admin\styles\reset.css	/^h1 {$/;"	function	line:31
+h2	D:\www\admin\styles\reset.css	/^h2 {$/;"	function	line:36
+h3	D:\www\admin\styles\reset.css	/^h3 {$/;"	function	line:41
+h4, h5, h6	D:\www\admin\styles\reset.css	/^h4, h5, h6 {$/;"	function	line:46
+:before, :after	D:\www\admin\styles\reset.css	/^:before, :after {$/;"	function	line:51
+abbr, acronym	D:\www\admin\styles\reset.css	/^abbr, acronym {$/;"	function	line:55
+html	D:\www\admin\styles\style.css	/^html {$/;"	function	line:5
+@media screen and (min-width: 768px) and (max-width: 1080px)	D:\www\admin\styles\style.css	/^@media screen and (min-width: 768px) and (max-width: 1080px) {$/;"	function	line:10
+html	D:\www\admin\styles\style.css	/^  html {$/;"	function	line:12
+@media screen and (min-width: 420px) and (max-width: 768px)	D:\www\admin\styles\style.css	/^@media screen and (min-width: 420px) and (max-width: 768px) {$/;"	function	line:14
+html	D:\www\admin\styles\style.css	/^  html {$/;"	function	line:16
+@media screen and (max-width: 420px) and (min-width: 300px)	D:\www\admin\styles\style.css	/^@media screen and (max-width: 420px) and (min-width: 300px) {$/;"	function	line:18
+html	D:\www\admin\styles\style.css	/^  html {$/;"	function	line:20
+@media screen and (max-width: 300px)	D:\www\admin\styles\style.css	/^@media screen and (max-width: 300px) {$/;"	function	line:22
+html	D:\www\admin\styles\style.css	/^  html {$/;"	function	line:24
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre	D:\www\admin\styles\style.css	/^body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre,$/;"	function	line:27
+form, fieldset, input, textarea, p, blockquote, th, td, button	D:\www\admin\styles\style.css	/^form, fieldset, input, textarea, p, blockquote, th, td, button {$/;"	function	line:28
+table	D:\www\admin\styles\style.css	/^table {$/;"	function	line:35
+fieldset, img	D:\www\admin\styles\style.css	/^fieldset, img {$/;"	function	line:40
+address, caption, cite, code, dfn, em, strong, th, var	D:\www\admin\styles\style.css	/^address, caption, cite, code, dfn, em, strong, th, var {$/;"	function	line:44
+ol, ul, li	D:\www\admin\styles\style.css	/^ol, ul, li {$/;"	function	line:49
+caption, th	D:\www\admin\styles\style.css	/^caption, th {$/;"	function	line:53
+h1	D:\www\admin\styles\style.css	/^h1 {$/;"	function	line:57
+h2	D:\www\admin\styles\style.css	/^h2 {$/;"	function	line:62
+h3	D:\www\admin\styles\style.css	/^h3 {$/;"	function	line:67
+h4, h5, h6	D:\www\admin\styles\style.css	/^h4, h5, h6 {$/;"	function	line:72
+:before, :after	D:\www\admin\styles\style.css	/^:before, :after {$/;"	function	line:77
+a, a:hover, a:visited	D:\www\admin\styles\style.css	/^a, a:hover, a:visited {$/;"	function	line:81
+abbr, acronym	D:\www\admin\styles\style.css	/^abbr, acronym {$/;"	function	line:86
+header nav h1	D:\www\admin\styles\style.css	/^header nav h1 {$/;"	function	line:93
+body	D:\www\admin\styles\style.css	/^body {$/;"	function	line:97
+nav div.navbar	D:\www\admin\styles\style.css	/^nav div.navbar {$/;"	function	line:103
+#nav-items	D:\www\admin\styles\style.css	/^#nav-items {$/;"	function	line:112
+.nav-item	D:\www\admin\styles\style.css	/^  .nav-item {$/;"	function	line:131
+.nav-item a	D:\www\admin\styles\style.css	/^    .nav-item a {$/;"	function	line:134
+.nav-item a:hover	D:\www\admin\styles\style.css	/^      .nav-item a:hover {$/;"	function	line:144
+.nav-item a:hover .nav-item	D:\www\admin\styles\style.css	/^        .nav-item a:hover .nav-item {$/;"	function	line:152
+header nav h1	D:\www\admin\styles\style.scss	/^header nav h1 {$/;"	function	line:6
+body	D:\www\admin\styles\style.scss	/^body {$/;"	function	line:10
+nav div.navbar	D:\www\admin\styles\style.scss	/^nav div.navbar {$/;"	function	line:16
+#nav-items	D:\www\admin\styles\style.scss	/^#nav-items {$/;"	function	line:25
+@at-root.nav-item	D:\www\admin\styles\style.scss	/^    @at-root.nav-item {$/;"	function	line:33
+& a	D:\www\admin\styles\style.scss	/^        & a{$/;"	function	line:35
+&:hover	D:\www\admin\styles\style.scss	/^            &:hover{$/;"	function	line:46
+.nav-item	D:\www\admin\styles\style.scss	/^                .nav-item{$/;"	function	line:53
+html	D:\www\admin\styles\_normalize.scss	/^html {$/;"	function	line:9
+body	D:\www\admin\styles\_normalize.scss	/^body {$/;"	function	line:19
+article	D:\www\admin\styles\_normalize.scss	/^article,$/;"	function	line:33
+aside	D:\www\admin\styles\_normalize.scss	/^aside,$/;"	function	line:34
+details	D:\www\admin\styles\_normalize.scss	/^details,$/;"	function	line:35
+figcaption	D:\www\admin\styles\_normalize.scss	/^figcaption,$/;"	function	line:36
+figure	D:\www\admin\styles\_normalize.scss	/^figure,$/;"	function	line:37
+footer	D:\www\admin\styles\_normalize.scss	/^footer,$/;"	function	line:38
+header	D:\www\admin\styles\_normalize.scss	/^header,$/;"	function	line:39
+hgroup	D:\www\admin\styles\_normalize.scss	/^hgroup,$/;"	function	line:40
+main	D:\www\admin\styles\_normalize.scss	/^main,$/;"	function	line:41
+menu	D:\www\admin\styles\_normalize.scss	/^menu,$/;"	function	line:42
+nav	D:\www\admin\styles\_normalize.scss	/^nav,$/;"	function	line:43
+section	D:\www\admin\styles\_normalize.scss	/^section,$/;"	function	line:44
+summary	D:\www\admin\styles\_normalize.scss	/^summary {$/;"	function	line:45
+audio	D:\www\admin\styles\_normalize.scss	/^audio,$/;"	function	line:54
+canvas	D:\www\admin\styles\_normalize.scss	/^canvas,$/;"	function	line:55
+progress	D:\www\admin\styles\_normalize.scss	/^progress,$/;"	function	line:56
+video	D:\www\admin\styles\_normalize.scss	/^video {$/;"	function	line:57
+audio:not([controls])	D:\www\admin\styles\_normalize.scss	/^audio:not([controls]) {$/;"	function	line:67
+[hidden]	D:\www\admin\styles\_normalize.scss	/^[hidden],$/;"	function	line:77
+template	D:\www\admin\styles\_normalize.scss	/^template {$/;"	function	line:78
+a	D:\www\admin\styles\_normalize.scss	/^a {$/;"	function	line:89
+a:active	D:\www\admin\styles\_normalize.scss	/^a:active,$/;"	function	line:97
+a:hover	D:\www\admin\styles\_normalize.scss	/^a:hover {$/;"	function	line:98
+abbr[title]	D:\www\admin\styles\_normalize.scss	/^abbr[title] {$/;"	function	line:109
+b	D:\www\admin\styles\_normalize.scss	/^b,$/;"	function	line:117
+strong	D:\www\admin\styles\_normalize.scss	/^strong {$/;"	function	line:118
+dfn	D:\www\admin\styles\_normalize.scss	/^dfn {$/;"	function	line:126
+h1	D:\www\admin\styles\_normalize.scss	/^h1 {$/;"	function	line:135
+mark	D:\www\admin\styles\_normalize.scss	/^mark {$/;"	function	line:144
+small	D:\www\admin\styles\_normalize.scss	/^small {$/;"	function	line:153
+sub	D:\www\admin\styles\_normalize.scss	/^sub,$/;"	function	line:161
+sup	D:\www\admin\styles\_normalize.scss	/^sup {$/;"	function	line:162
+sup	D:\www\admin\styles\_normalize.scss	/^sup {$/;"	function	line:169
+sub	D:\www\admin\styles\_normalize.scss	/^sub {$/;"	function	line:173
+img	D:\www\admin\styles\_normalize.scss	/^img {$/;"	function	line:184
+svg:not(:root)	D:\www\admin\styles\_normalize.scss	/^svg:not(:root) {$/;"	function	line:192
+figure	D:\www\admin\styles\_normalize.scss	/^figure {$/;"	function	line:203
+hr	D:\www\admin\styles\_normalize.scss	/^hr {$/;"	function	line:211
+pre	D:\www\admin\styles\_normalize.scss	/^pre {$/;"	function	line:221
+code	D:\www\admin\styles\_normalize.scss	/^code,$/;"	function	line:229
+kbd	D:\www\admin\styles\_normalize.scss	/^kbd,$/;"	function	line:230
+pre	D:\www\admin\styles\_normalize.scss	/^pre,$/;"	function	line:231
+samp	D:\www\admin\styles\_normalize.scss	/^samp {$/;"	function	line:232
+button	D:\www\admin\styles\_normalize.scss	/^button,$/;"	function	line:252
+input	D:\www\admin\styles\_normalize.scss	/^input,$/;"	function	line:253
+optgroup	D:\www\admin\styles\_normalize.scss	/^optgroup,$/;"	function	line:254
+select	D:\www\admin\styles\_normalize.scss	/^select,$/;"	function	line:255
+textarea	D:\www\admin\styles\_normalize.scss	/^textarea {$/;"	function	line:256
+button	D:\www\admin\styles\_normalize.scss	/^button {$/;"	function	line:266
+button	D:\www\admin\styles\_normalize.scss	/^button,$/;"	function	line:277
+select	D:\www\admin\styles\_normalize.scss	/^select {$/;"	function	line:278
+button	D:\www\admin\styles\_normalize.scss	/^button,$/;"	function	line:290
+input[type="reset"]	D:\www\admin\styles\_normalize.scss	/^input[type="reset"],$/;"	function	line:292
+input[type="submit"]	D:\www\admin\styles\_normalize.scss	/^input[type="submit"] {$/;"	function	line:293
+button[disabled]	D:\www\admin\styles\_normalize.scss	/^button[disabled],$/;"	function	line:302
+html input[disabled]	D:\www\admin\styles\_normalize.scss	/^html input[disabled] {$/;"	function	line:303
+button::-moz-focus-inner	D:\www\admin\styles\_normalize.scss	/^button::-moz-focus-inner,$/;"	function	line:311
+input::-moz-focus-inner	D:\www\admin\styles\_normalize.scss	/^input::-moz-focus-inner {$/;"	function	line:312
+input	D:\www\admin\styles\_normalize.scss	/^input {$/;"	function	line:322
+input[type="checkbox"]	D:\www\admin\styles\_normalize.scss	/^input[type="checkbox"],$/;"	function	line:334
+input[type="radio"]	D:\www\admin\styles\_normalize.scss	/^input[type="radio"] {$/;"	function	line:335
+input[type="number"]::-webkit-inner-spin-button	D:\www\admin\styles\_normalize.scss	/^input[type="number"]::-webkit-inner-spin-button,$/;"	function	line:346
+input[type="number"]::-webkit-outer-spin-button	D:\www\admin\styles\_normalize.scss	/^input[type="number"]::-webkit-outer-spin-button {$/;"	function	line:347
+input[type="search"]	D:\www\admin\styles\_normalize.scss	/^input[type="search"] {$/;"	function	line:357
+input[type="search"]::-webkit-search-cancel-button	D:\www\admin\styles\_normalize.scss	/^input[type="search"]::-webkit-search-cancel-button,$/;"	function	line:370
+input[type="search"]::-webkit-search-decoration	D:\www\admin\styles\_normalize.scss	/^input[type="search"]::-webkit-search-decoration {$/;"	function	line:371
+fieldset	D:\www\admin\styles\_normalize.scss	/^fieldset {$/;"	function	line:379
+legend	D:\www\admin\styles\_normalize.scss	/^legend {$/;"	function	line:390
+textarea	D:\www\admin\styles\_normalize.scss	/^textarea {$/;"	function	line:399
+optgroup	D:\www\admin\styles\_normalize.scss	/^optgroup {$/;"	function	line:408
+table	D:\www\admin\styles\_normalize.scss	/^table {$/;"	function	line:419
+td	D:\www\admin\styles\_normalize.scss	/^td,$/;"	function	line:424
+th	D:\www\admin\styles\_normalize.scss	/^th {$/;"	function	line:425
+color_font	D:\www\admin\styles\_reset.scss	/^$color_font:#FFFFFF;$/;"	function	line:4
+color_linkOnHover	D:\www\admin\styles\_reset.scss	/^$color_linkOnHover:#000000;$/;"	function	line:5
+color_bodyBG	D:\www\admin\styles\_reset.scss	/^$color_bodyBG:#352121;$/;"	function	line:6
+color_button	D:\www\admin\styles\_reset.scss	/^$color_button:#A55454;$/;"	function	line:7
+html	D:\www\admin\styles\_reset.scss	/^html{$/;"	function	line:11
+@media screen and (min-width: 768px) and (max-width: 1080px)	D:\www\admin\styles\_reset.scss	/^@media screen and (min-width: 768px) and (max-width: 1080px){$/;"	function	line:17
+html	D:\www\admin\styles\_reset.scss	/^    html{$/;"	function	line:18
+@media screen and (min-width: 420px) and (max-width: 768px)	D:\www\admin\styles\_reset.scss	/^@media screen and (min-width: 420px) and (max-width: 768px){$/;"	function	line:22
+html	D:\www\admin\styles\_reset.scss	/^    html{$/;"	function	line:23
+@media screen and (max-width: 420px) and (min-width: 300px)	D:\www\admin\styles\_reset.scss	/^@media screen and (max-width: 420px) and (min-width: 300px){$/;"	function	line:27
+html	D:\www\admin\styles\_reset.scss	/^    html{$/;"	function	line:28
+@media screen and (max-width: 300px)	D:\www\admin\styles\_reset.scss	/^@media screen and (max-width: 300px){$/;"	function	line:32
+html	D:\www\admin\styles\_reset.scss	/^    html{$/;"	function	line:33
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre	D:\www\admin\styles\_reset.scss	/^body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,$/;"	function	line:37
+form,fieldset,input,textarea,p,blockquote,th,td,button	D:\www\admin\styles\_reset.scss	/^form,fieldset,input,textarea,p,blockquote,th,td,button {$/;"	function	line:38
+table	D:\www\admin\styles\_reset.scss	/^table {$/;"	function	line:44
+fieldset,img	D:\www\admin\styles\_reset.scss	/^fieldset,img {$/;"	function	line:48
+address,caption,cite,code,dfn,em,strong,th,var	D:\www\admin\styles\_reset.scss	/^address,caption,cite,code,dfn,em,strong,th,var {$/;"	function	line:51
+ol,ul,li	D:\www\admin\styles\_reset.scss	/^ol,ul,li {$/;"	function	line:55
+caption,th	D:\www\admin\styles\_reset.scss	/^caption,th {$/;"	function	line:58
+@for $i from 1 through 3	D:\www\admin\styles\_reset.scss	/^@for $i from 1 through 3{$/;"	function	line:61
+h#{$i}	D:\www\admin\styles\_reset.scss	/^  h#{$i}{ font-size: 2 * 12rem - ( ($i - 1) * 2); font-weight: bold }$/;"	function	line:62
+h4,h5,h6	D:\www\admin\styles\_reset.scss	/^h4,h5,h6 {$/;"	function	line:64
+:before,:after	D:\www\admin\styles\_reset.scss	/^:before,:after {$/;"	function	line:68
+a,a:hover,a:visited	D:\www\admin\styles\_reset.scss	/^a,a:hover,a:visited{$/;"	function	line:71
+abbr,acronym	D:\www\admin\styles\_reset.scss	/^abbr,acronym {$/;"	function	line:75
+k	D:\www\admin\templates_c\59dd5ff207c630165087bf59c35382c7Index.tpl.php	/^                    <?php foreach($this->values['cat'] as $k => $v){ ?>$/;"	variable	line:16
+k	D:\www\admin\templates_c\d8687fe452933920721021c3a7377f4eMovie.tpl.php	/^                        <?php foreach($this->values['cat'] as $k => $v){ ?>$/;"	variable	line:17
+tick_handler	D:\www\admin\test.php	/^function tick_handler()$/;"	function	line:3
+a	D:\www\admin\test.php	/^$a = 1;$/;"	variable	line:8

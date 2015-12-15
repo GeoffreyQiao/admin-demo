@@ -1,6 +1,5 @@
 <?php //log.class.php 记录信息到日志文件
-//内容给定，写入文件(fopen,fwrite).如果文件大于1M，重新写一份。
-//
+//内容给定，写入文件.如果文件大于1M，重新写一份。
 class Log{
 
     const LOGFILE = 'curr.log';

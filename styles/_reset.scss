@@ -1,53 +1,23 @@
 @charset "utf-8" ;
+/*color define section*/
+
+$color_font:#FFFFFF;
+$color_linkOnHover:#000000;
+$color_bodyBG:#352121;
+$color_button:#A55454;
+
+/*color defined*/
+
 html{
+    font-family:"微软雅黑";
     font-size: 6.25%;
-}
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre, 
-form,fieldset,input,textarea,p,blockquote,th,td,button { 
-    padding: 0; 
-    margin: 0; 
-    border: none;
-    font-size: 16rem;
-}
-table { 
-    border-collapse: collapse; 
-    border-spacing: 0; 
-} 
-fieldset,img { 
-    border: 0; 
-} 
-address,caption,cite,code,dfn,em,strong,th,var { 
-    font-weight: normal; 
-    font-style: normal; 
-} 
-ol,ul,li { 
-    list-style: none; 
-} 
-caption,th { 
-    text-align: center; 
-}
-@for $i from 1 through 3{
-  h#{$i}{ font-size: 2 * 12rem - ( ($i - 1) * 2); font-weight: bold }
-} 
-h4,h5,h6 { 
-    font-weight: bold; 
-    font-size: 16rem; 
-} 
-:before,:after { 
-    content: ''; 
-} 
-a,a:hover,a:visited{
-    text-decoration: none;
-    color: black;
-}
-abbr,acronym { 
-    border: 0; 
+    color:$color_font;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1080px){
     html{
         font-size: 0.7px;
-    }   
+    }
 }
 @media screen and (min-width: 420px) and (max-width: 768px){
     html{
@@ -57,10 +27,51 @@ abbr,acronym {
 @media screen and (max-width: 420px) and (min-width: 300px){
     html{
         font-size: 0.4px;
-    }    
+    }
 }
 @media screen and (max-width: 300px){
     html{
         font-size: 0.2px;
     }
+}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td,button {
+    padding: 0;
+    margin: 0;
+    border: none;
+    font-size: 16rem;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+ol,ul,li {
+    list-style: none;
+}
+caption,th {
+    text-align: center;
+}
+@for $i from 1 through 3{
+  h#{$i}{ font-size: 2 * 12rem - ( ($i - 1) * 2); font-weight: bold }
+}
+h4,h5,h6 {
+    font-weight: bold;
+    font-size: 16rem;
+}
+:before,:after {
+    content: '';
+}
+a,a:hover,a:visited{
+    text-decoration: none;
+    color: $color-linkOnHover;
+}
+abbr,acronym {
+    border: 0;
 }

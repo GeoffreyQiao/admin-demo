@@ -1,0 +1,14 @@
+{
+	"path":{
+		"DS":"DIRECTORY_SEPARATOR",
+		"ROOT":"__DIR__.DS",
+		"TPL":"ROOT.'templates'.DS",
+		"TPL_C":"ROOT.'templates_c'.DS",
+		"CACHE":"ROOT.'cache'.DS"
+	},
+	"option":{
+		"adminCache":false,
+		"userCache":true
+	}
+
+}
