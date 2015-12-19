@@ -46,13 +46,10 @@ class Controller
 
 
     public function showCat(){
-        $name = get_called_class();
-        if (isset($_GET["cat"])){
-            $this->cat = $_GET['cat'];
-        }else {
-            $this->cat = substr($name,0,strpos($name, '_Con'));
-        }
+        $name      = get_called_class();
+        $this->cat = Cat_Mod::getCat();
         $this->con->display($this->cat.'.tpl');
     }
+
 
 }

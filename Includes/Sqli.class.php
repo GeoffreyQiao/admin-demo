@@ -13,10 +13,16 @@ class Sqli {
 
     //构造函数：主要用来返回一个mysqli对象
     public function  __construct() {
-            $this->conf   = json_decode(file_get_contents(ROOT.'config'.DS.'db.json'),true);
+        $this->conf   = json_decode(file_get_contents(ROOT.'config'.DS.'db.json'),true);
 
-            $this->mysqli = new mysqli($this->conf['host'].':'.$this->conf['port'], $this->conf['user'], $this->conf['pswd'], $this->conf['dbname']);
-            if(mysqli_connect_errno()) {
+        $this->mysqli = new mysqli(
+            $this->conf['host'],
+            $this->conf['user'],
+            $this->conf['pswd'],
+            $this->conf['dbname'],
+            $this->conf['port']
+        );
+        if(mysqli_connect_errno()) {
             $this->mysqli = false;
             die(mysqli_connect_error());
         } else {
@@ -78,9 +84,9 @@ class Sqli {
 
     //执行sql语句查询
     public function query($sql, $limit = null) {
-        $sql         = $this->get_query_sql($sql, $limit);
+        $sql       = $this->get_query_sql($sql, $limit);
         $this->sql = $sql;
-        $this->rs    = $this->mysqli->query($sql);
+        $this->rs  = $this->mysqli->query($sql);
         if (!$this->rs) {
             echo "<p>error: ".$this->mysqli->error."</p>";
             echo "<p>sql: ".$sql."</p>";
@@ -223,7 +229,7 @@ class Sqli {
                 if(isset($val))
                 {
                     $val = $val;
-                    if($i==0&&$val!==null)
+                    if( $i == 0 && $val !== null)
                     {
                         $data = $key."='".$val."'"; //第一次：如，update 表名 set username='admin'
                     }

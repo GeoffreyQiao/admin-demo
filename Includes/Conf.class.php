@@ -49,7 +49,7 @@ class Conf
         }
         else
         {
-            return null;
+            return none;
         }
     }
 

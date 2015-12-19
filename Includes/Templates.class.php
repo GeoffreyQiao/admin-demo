@@ -26,7 +26,7 @@ class Templates
         mkdir(CACHE);
       }
 
-    $tagLib = json_decode( file_get_contents( ROOT . 'config/conf.json' ), true );
+    $tagLib = json_decode( file_get_contents( ROOT . 'config/tempConf.json' ), true );
     foreach( $tagLib as $k => $v )
     {
       $this->proConfigs[ $k ] = $v;
@@ -94,7 +94,7 @@ class Templates
     //设置缓存文件存放路径
     $cacheFile = CACHE . md5( $file ) . $file . '.html';
 
-    $file = $this->whichFileShow($tplFile,$parFile,$cacheFile);
+    $file      = $this->whichFileShow($tplFile,$parFile,$cacheFile);
     require $file;
     return;
   }

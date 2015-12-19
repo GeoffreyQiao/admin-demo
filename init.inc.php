@@ -57,3 +57,6 @@ function __autoload($name){
             break;
     }
 }
+require_once 'Includes/Lib_base.php';
+$_GET  = _AddSlashes($_GET);
+$_POST = _AddSlashes($_POST);

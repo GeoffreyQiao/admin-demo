@@ -5,9 +5,8 @@
         protected $rs = array();
 
             public function action(){
-                $db = new Index_Mod();
-                $this->rs = $db->pageLoad();
+				$db       = new Index_Mod();
+				$this->rs = $db->pageLoad();
                 $this->assign('cat',$this->rs);
             }
-
     }

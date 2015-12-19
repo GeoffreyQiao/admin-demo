@@ -14,6 +14,15 @@
 
 abstract class Db
 {
+
+  /**
+   * Class Constructor
+   */
+  public function __construct()
+  {
+    
+  }
+
     
     /*
       链接服务器
