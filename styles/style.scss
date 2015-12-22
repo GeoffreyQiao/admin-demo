@@ -29,7 +29,8 @@ nav div.navbar {
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-around;
-    background: #343858;;
+    background: #343858;
+
     @at-root.nav-item {
         display: block;
         & a{
@@ -44,9 +45,10 @@ nav div.navbar {
             text-align: center;
 
             &:hover{
+                display: block;
                 background:#32779C;
                 border-radius: 35rem;
-                box-shadow: 0 0 40rem 10rem #C4C2C2;
+                box-shadow: 0 0 40rem 20rem #32779C;
                 font-size: 48rem;
                 position: relative;
                 z-index: 1;

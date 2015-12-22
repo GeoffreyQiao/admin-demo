@@ -127,10 +127,10 @@ nav div.navbar {
       -ms-flex-pack: distribute;
           justify-content: space-around;
   background: #343858; }
-  /* line 33, style.scss */
+  /* line 34, style.scss */
   .nav-item {
     display: block; }
-    /* line 35, style.scss */
+    /* line 36, style.scss */
     .nav-item a {
       display: block;
       height: 24vh;
@@ -140,15 +140,16 @@ nav div.navbar {
       font-size: 40rem;
       color: #fff;
       text-align: center; }
-      /* line 46, style.scss */
+      /* line 47, style.scss */
       .nav-item a:hover {
+        display: block;
         background: #32779C;
         border-radius: 35rem;
-        box-shadow: 0 0 40rem 10rem #C4C2C2;
+        box-shadow: 0 0 40rem 20rem #32779C;
         font-size: 48rem;
         position: relative;
         z-index: 1; }
-        /* line 53, style.scss */
+        /* line 55, style.scss */
         .nav-item a:hover .nav-item {
           background: #343858;
           position: absolute; }
